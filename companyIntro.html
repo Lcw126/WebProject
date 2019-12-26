@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <!-- Popper JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- Latest compiled JavaScript -->
+
+    <style>
+        body{margin: 0; padding: 0;}
+        #menuBigImg{
+            padding: 3em 0em;
+            text-align: center;
+            background-image: url('http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/board_title/gr_001.jpg') ;
+            background-size: cover;
+            height: 400px;
+            width: 100%;
+            color: white;  
+            display: table;
+        }
+        div span{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            
+        }
+       
+        #logo{
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+        nav{
+            position: absolute;
+            bottom: 20px;
+            left: 220px;
+            font-size: 16px;
+        }
+        nav li{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        nav li a{color: black; font-size:14px; font-weight: 900; }
+        nav li a:link{text-decoration: none;}
+        nav li a:hover{
+           transition: .4s;
+           color: rgb(238, 119, 0);
+           
+        }
+        nav li div:hover{ background-color: rgb(255, 171, 88); color: rgb(255, 255, 255);}
+        .secondMenu{
+            
+            background: rgba(255, 255, 255, 0.315);
+            /* display:none;  평상시에는 서브메뉴가 안보이게 하기 */
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .secondMenu li{  display: block;}
+        .secondMenu li a{ text-decoration: none;text-align: center;}
+        nav li:hover .secondMenu{
+            /* display: block; */
+            opacity: 1;
+            visibility: visible;
+            }
+        nav ul li #allMenu:hover .secondMenu{ opacity: 1; visibility: visible;}
+
+        #HeaderSecondMenu a{
+            background-color: null;
+            opacity: 1.0; 
+            color:white;
+            border: 1px solid white;    
+            width: 200px; 
+        }
+        section{width: 60%; margin-left: auto; margin-right: auto;}
+
+       
+     
+    </style>
+
+   
+
+</head>
+<body>
+
+    <div style="position: relative; width: auto; height: 95px;"> <!-- notice 영역-->
+        <div id="logo">
+            <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/site_logo.png">
+        </div>
+        <nav> <!--메뉴 리스트-->
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">브랜드이야기</a>
+                    <ul class="secondMenu">
+                        <li><a href="">인사말</a></li>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">BI소개</a></li>
+                        <li><a href="">연혁</a></li>
+                        <li><a href="">사회공헌활동</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">메뉴안내</a>
+                    <ul class="secondMenu">
+                        <li><a href="">스시·롤&샐러드바</a></li>
+                        <li><a href="">핫디쉬</a></li>
+                        <li><a href="">즉석코너</a></li>
+                        <li><a href="">디저트</a></li>
+                        <li><a href="">신메뉴 소개</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">메뉴찾기</a>
+                    <ul class="secondMenu">
+                        <li><a href="">쿠우쿠우 매장찾기</a></li>
+                    </ul>
+                </li>
+                <li><a href="">쿠우쿠우창업</a>
+                    <ul class="secondMenu">
+                        <li><a href="">개설절차</a></li>
+                        <li><a href="">가맹상담신청</a></li>
+                    </ul>
+                </li>
+                <li><a href="">고객지원</a>
+                    <ul class="secondMenu">
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">고객불편사항</a></li>
+                        <li><a href="">모바일상품권</a></li>
+                    </ul>
+                </li>
+                <li id="allMenu"><a href=""><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" alt="삼선"></a></li>
+                <li><a href="https://www.facebook.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_facebook.png" alt="f"></a></li>
+                <li><a href="https://www.instagram.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_insta.png" alt="카메라"></a></li>
+                <li><div style="border: 1px solid rgb(255, 171, 88); color: rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900; ">모바일상품권</div></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>   <!-- Header 영역 -->
+        <div id="menuBigImg">
+            <span>
+            <h3>Sushi.Roll salad Bar</h3>
+            <p>스시·롤·샐러드 뷔페의 선두주자가 되겠습니다.</p>
+                    <div class="basic-body container" style="padding-top: 100px;">
+                        <ul class="nav justify-content-center">
+                            <li id="HeaderSecondMenu" class="nav-item">
+                              <a  class="nav-link" href="#">인사말</a>
+                            </li>
+                            <li id= "HeaderSecondMenu" class="nav-item">
+                              <a style="background-color: rgb(238, 119, 0); opacity: 1.0; color:white;" class="nav-link" href="#">회사소개</a>
+                            </li>
+                            <li id="HeaderSecondMenu" class="nav-item">
+                                <a  class="nav-link" href="#">BI소개</a>
+                            </li>
+                            <li id="HeaderSecondMenu" class="nav-item">
+                                <a  class="nav-link" href="#">연혁</a>
+                            </li>
+                            <li id="HeaderSecondMenu" class="nav-item">
+                                <a  class="nav-link" href="#">사회공헌활동</a>
+                            </li>
+                          </ul>
+                    </div>
+
+            </span>
+        </div>
+    </header>
+
+
+    <section>
+
+        <article> <!-- 글 -->
+            <div style="margin-top: 26px;">
+                <p><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/stit_bullet.gif">
+                <strong  style="font-size: 24px;">회사소개</strong > 스시·롤&샐러드 뷔페의 선두주자가 되겠습니다.</p>
+            </div>
+            <p style="text-align: center; font-size: 28px; margin-bottom: 8px; margin-top: 40px;">스시·롤&샐러드바선두주자</p>
+            <p style="text-align: center; font-size: 16px; margin-bottom: 1px;">쿠우쿠우는 “정직 ㆍ친절 ㆍ청결”의 경영 철학으로</p>
+            <p style="text-align: center; font-size: 16px; margin-top: 0px; ">앞으로도 정직하고 신선한 메뉴, 고객 만족 서비스, 쾌적한 매장환경으로 고객님께 보답하겠습니다.</p>
+            
+        </article>
+
+        <article >
+           
+        </article>
+
+    </section>
+
+    <footer>
+    </footer>
+
+</body>
+</html>
