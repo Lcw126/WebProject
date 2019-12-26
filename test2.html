@@ -6,7 +6,8 @@
 
     <style>
         body{margin: 0; padding: 0;}
-        #img_findstore{
+
+        #menuBigImg{
             padding: 3em 0em;
             text-align: center;
             background-image: url('http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/board_title/gr_004.jpg') ;
@@ -16,6 +17,14 @@
             color: white;  
             display: table;
         }
+        #HeaderSecondMenu a{
+            background-color: null;
+            opacity: 1.0; 
+            border: 1px solid white;    
+            color:white;
+            width: 450px; 
+        }
+
         div span{
             display: table-cell;
             vertical-align: middle;
@@ -24,9 +33,9 @@
         }
         .contents{
  
-    width: 90%;
-    margin: 10px auto;
-}
+        width: 90%;
+        margin: 10px auto;
+    }
 
         #footer{
             width: 100%;    
@@ -154,22 +163,21 @@
     </div>
     
     <header>   <!-- Header 영역 -->
-        <div id="img_findstore">
+        <div id="menuBigImg">
             <span>
             <h3>Sushi.Roll salad Bar</h3>
             <p>스시 샐러드의 선두주자가 되겠습니다.</p>
+            <div class="basic-body container" style="padding-top: 50px;">
+                <ul class="nav justify-content-center">
 
-                    <div class="basic-body container ">
-     
-                        <ul class="nav nav-pills nav-fill">
-                            <li class="nav-item">
-                              <a style="background-color: rgb(238, 119, 0);color:white;"    class="nav-link active" href="#">개설절차</a>
-                            </li>
-                            <li class="nav-item">
-                              <a style="background-color: null; opacity: 1.0; color:white;" class="nav-link" href="#">가맹상담신청</a>
-                            </li>
-                          </ul>
-                    </div>
+                    <li id="HeaderSecondMenu" class="nav-item">
+                        <a style="background-color: rgb(238, 119, 0); opacity: 1.0; color:white;" class="nav-link" href="#">개설절차</a>
+                    </li>
+                    <li id="HeaderSecondMenu" class="nav-item">
+                        <a  class="nav-link" href="#">가맹상담신청</a>
+                    </li>
+                  </ul>
+            </div>
  
 
             </span>
@@ -178,7 +186,7 @@
 
     <section>
 
-        <article> <!-- 지도 부분 -->
+        <article> 
             <div style="margin-top: 26px;">
                 <p style="font-size: 12px;"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/stit_bullet.gif">
                 <strong style="font-size: 24px;">개설절차</strong>스시·롤&샐러드 뷔페의 선두주자가 되겠습니다.</p style="font-size: 12px;">
@@ -190,25 +198,36 @@
             
             <p><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/stit_bullet.gif"><span>성공창업</span> 안내</p>
             <div class="contents">
-                <ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                <ul >
+               
                 <li>
                 <div class="icon"><img src="./founded1img/newstep_section01_img01.png"></div>
                 <div class="icon_title">높은 브랜드 이미지</div>
                 <div class="icon_txt">퓨전초밥샐러드뷔페의 선두주자 ‘쿠우쿠우’는<br>쿠우쿠우만의 품격있는 음식과 서비스로<br>브랜드 이미지가 높습니다.</div>
-             
+                    
                 </li>
-                <li >
+                </div>
+                <li>
+                
                 <div class="icon"><img src="./founded1img/newstep_section01_img02.png"></div>
                 <div class="icon_title">인기 있는 다양한 메뉴</div>       
                 <div class="icon_txt">전 연령층을 아울러 모두가 좋아하는<br>다양한 메뉴를 제공합니다.</div>
                
-                </li>
+                </li
+      
                 <li>
+             
                 <div class="icon"><img src="./founded1img/newstep_section01_img03.png"></div>
                 <div class="icon_title">신선한 맛 유지</div>
                 <div class="icon_txt">매일 공급하는<br>프레쉬 배송시스템으로<br>언제나 신선한 맛을 유지합니다.</div>
-              
+      
                 </li>
+               
+                </div>
+            </div>
                 <li>
                 <div class="icon"><img src="./founded1img/newstep_section01_img04.png"></div>
                 <div class="icon_title">동일한 맛 유지</div>
@@ -285,20 +304,169 @@
                 </div>
                 </div>
 
-        </article>
-    </section>
-    <div class="row">
-        <ul class="icon" >
-            <li style="float: left; margin-left: auto; margin-right: auto;"><a href="https://www.facebook.com/freshqooqoo/" target="_blank"><img src="./eventimg/facebook.png" alt="facebook"></a></li>
-            <li style="float: left;margin-left: auto; margin-right: auto;"><a href="https://www.instagram.com/freshqooqoo/" target="_blank"><img src="./eventimg/instagram.png" alt="instagram"></a></li>
-    
-        </ul>     
+
+        <div class="section03">
+             
+        <p><img src="./founded1img/newstep_section01_title_icon.png">창업절차 안내</p>
+ 
+
+        <div class="contents">
+   
+        <h3 class="ttlsu">매장면적 약 200평 기준 개설비용</h3>
+        <table class="table01">
+        <colgroup>
+        <col width="20%">
+        <col width="10%">
+        <col width="15%">
+        <col width="*">
+        <col width="20%">
+        <col width="25%">
+        </colgroup>
+        <thead>
+        <tr>
+        <th scope="col">구분</th>
+        <th colspan="2" scope="col">항목</th>
+        <th scope="col">단위</th>
+        <th scope="col">금액</th>
+        <th scope="col">비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td scope="row" rowspan="8">인테리어공사</td>
+        <td colspan="2">본공사</td>
+        <td>식</td>
+        <td>320,000,000</td>
+        <td class="orange">1,600,000원 / 3.3m<sup>2</sup></td>
+        </tr>
+        <tr>
+        <td rowspan="7">별도공사</td>
+        <td>전기공사</td>
+        <td>식</td>
+        <td>20,000,000</td>
+        <td class="orange">&nbsp;</td>
+        </tr>
+        <tr>
+        <td>가스공사</td>
+        <td>식</td>
+        <td>10,000,000</td>
+        <td class="orange">&nbsp;</td>
+        </tr>
+        <tr>
+        <td>소방공사</td>
+        <td>식</td>
+        <td>10,000,000</td>
+        <td class="orange">&nbsp;</td>
+        </tr>
+        <tr>
+        <td>덕트공사</td>
+        <td>식</td>
+        <td>30,000,000</td>
+        <td class="orange">&nbsp;</td>
+        </tr>
+        <tr>
+        <td>놀이방 공사</td>
+        <td>식</td>
+        <td>15,000,000</td>
+        <td class="orange">&nbsp;</td>
+        </tr>
+        <tr>
+        <td>블라인드 공사</td>
+        <td>식</td>
+        <td>5,000,000</td>
+        <td class="orange">방염제품</td>
+        </tr>
+        <tr>
+        <td>자동문 공사</td>
+        <td>식</td>
+        <td>10,000,000</td>
+        <td class="orange">&nbsp;</td>
+        </tr>
+        <tr>
+        <td>사인(간판)공사</td>
+        <td colspan="2">내/외부사인</td>
+        <td>식</td>
+        <td>40,000,000</td>
+        <td class="orange">&nbsp;</td>
+        </tr>
+        <tr>
+        <td scope="row">냉/난방공사</td>
+        <td colspan="2">냉/난방공사 일체</td>
+        <td>식</td>
+        <td>80,000,000</td>
+        <td class="orange">부하율 300~350%</td>
+        </tr>
+        <tr>
+        <td scope="row">주방설비</td>
+        <td colspan="2">냉동/냉장 설비일체</td>
+        <td>식</td>
+        <td>90,000,000</td>
+        <td class="orange">&nbsp;</td>
+        </tr>
+        <tr>
+        <td scope="row">주방집기</td>
+        <td colspan="2">집기/비품/기물 일체</td>
+        <td>식</td>
+        <td>160,000,000</td>
+        <td class="orange">&nbsp;</td>
+        </tr>
+        <tr>
+        <td scope="row">의탁자</td>
+        <td colspan="2">의탁자 출고 및 설치</td>
+        <td>식</td>
+        <td>30,000,000</td>
+        <td class="orange">&nbsp;</td>
+        </tr>
+        <tr>
+        <td scope="row">사무용품</td>
+        <td colspan="2">TV/세탁기 등</td>
+        <td>식</td>
+        <td>20,000,000</td>
+        <td class="orange">&nbsp;</td>
+        </tr>
+        <tr>
+        <td scope="row">오픈행사</td>
+        <td colspan="2">이벤트</td>
+        <td>식</td>
+        <td>10,000,000</td>
+        <td class="orange">&nbsp;</td>
+        </tr>
+        <tr>
+        <td scope="row">가맹비</td>
+        <td colspan="2">상표사용권 등</td>
+        <td>식</td>
+        <td>20,000,000</td>
+        <td class="orange">&nbsp;</td>
+        </tr>
+        <tr>
+        <td colspan="4" class="Ltd" scope="row">총공사금액합계</td>
+        <td class="Ltd">870,000,000</td>
+        <td class="Ltd"><span class="orange">부가세 별도</span></td>
+        </tr>
+
+        </tbody>
+        </table>
+        <p class="orange">※ 지방의 경우 공사비가 7% 추가 발생할 수 있습니다.</p>
+        <p class="orange">※ 상기표는 현장여건, 기타 사정에 따라 변경될 수 있습니다. (철거비용, 전기간선 공사비용 등)</p>
+        <p class="orange">&nbsp;&nbsp;&nbsp; 신규입점제안은 E-mail : <a href="mailto:jumpo@qooqoo.co.kr">jumpo@qooqoo.co.kr</a>로 주시기 바랍니다.</p>
+        </div>
+
+        </div>
+
+
+    </article>
+</section>
 
     <div id="footer" class="footer">
+        <ul class="icon" >
+            <li style="float: left; margin-left: auto; margin-right: auto;"><a href="https://www.facebook.com/freshqooqoo/" target="_blank"><img src="./eventimg/facebook.png" alt="facebook"></a></li>
+            <li style="float: left; margin-left: auto; margin-right: auto;"><a href="https://www.instagram.com/freshqooqoo/" target="_blank"><img src="./eventimg/instagram.png" alt="instagram"></a></li>
+    
+        </ul> 
     <div class="logo"><img src="./eventimg/foot-logo.png" alt="logo"></div>
     <p class="pcCopy"><img src="./eventimg/foot-copy.gif" alt="COPYRIGHT"></p>
     </div>
-    </div>
+
     
    
 </body>

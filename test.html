@@ -6,16 +6,24 @@
 
     <style>
         body{margin: 0; padding: 0;}
-        #img_findstore{
+        #menuBigImg{
             padding: 3em 0em;
             text-align: center;
-            background-image: url('http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/board_title/gr_005.jpg') ;
+            background-image: url('http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/board_title/gr_004.jpg') ;
             background-size: cover;
             height: 350px;
             width: 100%;
             color: white;  
             display: table;
         }
+        #HeaderSecondMenu a{
+            background-color: null;
+            opacity: 1.0; 
+            color:white;
+            border: 1px solid white;    
+            width: 230px; 
+        }
+
         div span{
             display: table-cell;
             vertical-align: middle;
@@ -85,6 +93,8 @@
         nav ul li #allMenu:hover .secondMenu{ opacity: 1; visibility: visible;}
         #btn{width: 90%; margin-left: auto; margin-right: auto;}
         section{width: 90%; margin-left: auto; margin-right: auto;}
+
+        
    </style>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
@@ -152,34 +162,31 @@
     </div>
     
     <header>   <!-- Header 영역 -->
-        <div id="img_findstore">
+        <div id="menuBigImg">
             <span>
             <h3>Sushi.Roll salad Bar</h3>
-            <p>스시 샐러드의 선두주자가 되겠습니다.</p>
-            <div class="basic-body container ">
-     
-                <ul class="nav nav-pills nav-fill">
-                    <li class="nav-item">
-                        <a style="background-color: null; opacity: 1.0; color:white;" class="nav-link" href="#">공지사항</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="background-color: rgb(238, 119, 0);color:white;"  class="nav-link active" href="#">이벤트</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="background-color: null; opacity: 1.0; color:white;" class="nav-link" href="#">고객불편사항</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="background-color: null; opacity: 1.0; color:white;"class="nav-link" href="#">모바일 상품권</a>
-                      </li>
-                  </ul>
-            </div>
-            </div>
+            <p>스시·롤·샐러드 뷔페의 선두주자가 되겠습니다.</p>
 
-    </div>
-
+                    <div class="basic-body container" style="padding-top: 50px;">
+                        <ul class="nav justify-content-center">
+                            <li id="HeaderSecondMenu" class="nav-item">
+                              <a  class="nav-link" href="#">공지사항</a>
+                            </li>
+                            <li id= "HeaderSecondMenu" class="nav-item">
+                                <a style="background-color: rgb(238, 119, 0); opacity: 1.0; color:white;" class="nav-link" href="#">이벤트</a>
+                            </li>
+                            <li id="HeaderSecondMenu" class="nav-item">
+                               <a  class="nav-link" href="#">고객불편사항</a>
+                            </li>
+                            <li id="HeaderSecondMenu" class="nav-item">
+                                <a  class="nav-link" href="#">모바일상품권</a>
+                            </li>
+                          </ul>
+                    </div>
 
             </span>
         </div>
+
     </header>
 
     <section>
@@ -192,27 +199,60 @@
         </article>
 
         <article> <!-- 이벤트 게시판 -->
-       
-        </article>
-    </section>
+            <div class="card" style="position: absolute; width: 24rem;margin-left:10rem;">
+                <img  src="./eventimg/thumb-3743816712_L46rNmDi_b4bdbbcd17260b7f668b03b9a22c439d6bf44cdd_403x403.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">진행중</a>
+                  <h5 class="card-title">                
+                      <a href="http://www.qooqoo.co.kr/bbs/board.php?bo_table=promotion&amp;wr_id=42"><strong>겨울 신메뉴 출시 이벤트!</strong></a>
+                  </h5>
+                  <p class="card-text">2019-12-02&nbsp; ~&nbsp;  2019-12-13</p>
+
+                </div>
+              </div>
+
+              <div class="card" style="position: absolute;width: 24rem;margin-left:1rem; left: 40rem;">
+                <img  src="./eventimg/thumb-400d1fb05b7d02cba52158860c64416f_1541408567_35_403x403.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">종료</a>
+                  <h5 class="card-title">                
+                      <a href="http://www.qooqoo.co.kr/bbs/board.php?bo_table=promotion&amp;wr_id=42"><strong>쿠우쿠우 수험생 이벤트!</strong></a>
+                  </h5>
+                  <p class="card-text">2019-11-14&nbsp; ~&nbsp;  2019-11-17</p>
+
+                </div>
+              </div>
+
+              <div class="card" style="position: absolute;width: 24rem; margin-left:1rem; left: 66rem;">
+                <img  src="./eventimg/thumb-977826508_TvVLSuJ0_f09b0ecf1248b7ae77dda5dd74833dca17f830a6_403x403.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">종료</a>
+                  <h5 class="card-title">                
+                      <a href="http://www.qooqoo.co.kr/bbs/board.php?bo_table=promotion&amp;wr_id=42"><strong>가을 신메뉴 출시 이벤트!</strong></a>
+                  </h5>
+                  <p class="card-text">2019-10-16 &nbsp; ~&nbsp; 2019-10-29</p>
+
+                </div>
+              </div>
 
 
-    
-        <div class="row">
+            </article>
+        </section>
+
+   
+
+
+        <div id="footer" class="footer">
             <ul class="icon" >
                 <li style="float: left; margin-left: auto; margin-right: auto;"><a href="https://www.facebook.com/freshqooqoo/" target="_blank"><img src="./eventimg/facebook.png" alt="facebook"></a></li>
                 <li style="float: left;margin-left: auto; margin-right: auto;"><a href="https://www.instagram.com/freshqooqoo/" target="_blank"><img src="./eventimg/instagram.png" alt="instagram"></a></li>
-        
             </ul>     
-
-        <div id="footer" class="footer">
         <div class="logo"><img src="./eventimg/foot-logo.png" alt="logo"></div>
         <p class="pcCopy"><img src="./eventimg/foot-copy.gif" alt="COPYRIGHT"></p>
         </div>
-        </div>
-
-
     
+
+
   
 </body>
 </html>
