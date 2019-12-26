@@ -128,6 +128,26 @@
             color: rgb(146, 41, 22);
             
         }
+
+        .imgSelect {
+	cursor: pointer;
+}
+
+.popupLayer {
+	position: absolute;
+	display: none;
+	background-color: #ffffff;
+	border: solid 2px #d0d0d0;
+	width: 350px;
+	height: 150px;
+	padding: 10px;
+  
+}
+.popupLayer div {
+	position: absolute;
+	top: 5px;
+	right: 5px
+}
         
    </style>
 
@@ -160,6 +180,42 @@
       $('#gangwon').css({fill: "#0900BF", transition: "1s"});
     }else if (mapCondition =='제주특별자치도') {
       $('#jeju').css({fill: "#BFAF26", transition: "1s"});
+      
+     
+	// $('#toa').parent().parent().hide();
+
+
+
+    var sWidth = window.innerWidth;
+		var sHeight = window.innerHeight;
+
+		var oWidth = $('.popupLayer').width();
+		var oHeight = $('.popupLayer').height();
+ 
+    m;
+    $(document).mousemove(function(e){
+      m=e;
+    });
+
+		// 레이어가 나타날 위치를 셋팅한다.
+		var divLeft = m.pageX + 10; // e.clientX + 10;
+		var divTop =  m.pageY + 5; // e.clientY + 5;
+   
+		// 레이어가 화면 크기를 벗어나면 위치를 바꾸어 배치한다.
+		if( divLeft + oWidth > sWidth ) divLeft -= oWidth;
+		if( divTop + oHeight > sHeight ) divTop -= oHeight;
+
+		// 레이어 위치를 바꾸었더니 상단기준점(0,0) 밖으로 벗어난다면 상단기준점(0,0)에 배치하자.
+		if( divLeft < 0 ) divLeft = 0;
+		if( divTop < 0 ) divTop = 0;
+   
+		$('.popupLayer').css({
+      display:"block",
+			top: "divTop",
+			left: "divLeft",
+			position: "absolute" 
+		}).show();
+
     }else if (mapCondition =='경상남도') {
       $('#gyeongnam').css({fill: "#BF6B26", transition: "1s"});
     }else if (mapCondition == '경상북도') {
@@ -526,6 +582,14 @@
         </article>
     </section>
     
+    <div class="popupLayer">
+      <div>
+        <span class="toa" onClick="closeLayer(this)" style="cursor:pointer;font-size:1.5em" title="닫기">X</span>
+      </div>
+      여긴 레이어~</br>
+      클릭하면 바로 나타나는 레이어에요^^
+    </div>
+
     <footer>
 
     </footer>
