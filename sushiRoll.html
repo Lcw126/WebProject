@@ -78,8 +78,52 @@
             border: 1px solid white;    
             width: 200px; 
         }
-        section{width: 60%; margin-left: auto; margin-right: auto;}
+        section{width: 75%; margin-left: auto; margin-right: auto;}
      
+
+        .post{
+            position: relative;
+            width: 400px;
+            height: 250px;
+            display: inline-block;
+        }
+       
+        .post img {
+            display: block;
+            width: 400px;
+            height: 250px;
+        }
+
+        .post-s{
+            width: 0;
+            height: 75px;
+            position: absolute;
+            top: 20;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: visible;
+            transition: 0.7s ease;   
+        }
+        /* .post:hover .post-s{
+            opacity: 1;
+        } */
+        .post-sBottom{
+            width: 95%;
+            height: 1;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(245, 134, 30, 0.822);
+        }
+        /* .post-s p{
+            color: white;
+           position: absolute;
+           
+        } */
+        .post:hover .post-s{
+            height: 100%;  
+           
+        }
     </style>
 
 </head>
@@ -177,16 +221,59 @@
                 <p><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/stit_bullet.gif">
                 <strong  style="font-size: 24px;">스시·롤&샐러드바</strong > 스시·롤&샐러드 뷔페의 선두주자가 되겠습니다.</p>
             </div>
-            <p>매일 아침 공급되는 신선한 양질의 재료로 다채로운 메뉴를 제공합니다.</p>
-            <p>쿠우쿠우의 특별한 스시·롤&샐러드바를 즐겨보세요.</p>
+            <p style="text-align: center; font-size: 16px; padding-top: 15px;">매일 아침 공급되는 신선한 양질의 재료로 다채로운 메뉴를 제공합니다.</p>
+            <p style="text-align: center; font-size: 28px;">쿠우쿠우의 특별한 스시·롤&샐러드바를 즐겨보세요.</p>
 
-            <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/sushi-roll/icon_img01.png" alt="">
-            <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/sushi-roll/icon_img02.png" alt="">
-            <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/sushi-roll/icon_img03.png" alt="">
+            <!-- 동그란 이미지 3개 -->
+            <div class="nav justify-content-center" style="padding-top: 20px; padding-bottom: 20px;">
+                <div style="display: flex; flex-direction: column; padding-right: 10%;">
+                    <img class="nav-item" src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/sushi-roll/icon_img01.png">
+                    <p style="text-align: center;">신선한 식재료</p>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <img class="nav-item" src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/sushi-roll/icon_img02.png">
+                    <p style="text-align: center;">다채로운 메뉴</p>
+                </div>
+                <div style="display: flex; flex-direction: column; padding-left: 10%;">
+                    <img class="nav-item" src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/sushi-roll/icon_img03.png">
+                    <p style="text-align: center;">다양한 재료</p>
+                </div>
+            </div>
 
-            <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/sushi-roll/contentBg01.jpg" alt="">
-            <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/sushi-roll/contentBg02.jpg" alt="">
-            <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/sushi-roll/contentBg03.jpg" alt="">
+            <!-- 네모 이미지 3개 -->
+            <div class="nav justify-content-center" style="padding-top: 20px; padding-bottom: 20px;">
+                <div class="post">
+                    <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/sushi-roll/contentBg01.jpg" style="padding-right: 20px;">
+                    <div class="post-s post-sBottom" style="overflow: hidden;">
+                        <div style="display: flex; flex-direction: column; text-align: center;">
+                            <p style="font-weight: bold; color: white; margin-top: 15px; margin: 0%;">초밥</p>
+                            <p style="font-weight: bold; color: white; font-size: 13px;">누구도 따라올 수 없는 쿠우쿠우만의 초밥</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/sushi-roll/contentBg02.jpg" style="padding-right: 20px;">
+                    <div class="post-s post-sBottom" style="overflow: hidden;">
+                        <div style="display: flex; flex-direction: column; text-align: center;">
+                            <p style="font-weight: bold; color: white; margin-top: 15px; margin: 0%;">롤·군함</p>
+                            <p style="font-weight: bold; color: white; font-size: 13px;">보는 즐거움이 있는 화려한 롤, 군함</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/sushi-roll/contentBg03.jpg" style="padding-right: 20px;">
+                    <div class="post-s post-sBottom" style="overflow: hidden;">
+                        <div style="display: flex; flex-direction: column; text-align: center;">
+                            <p style="font-weight: bold; color: white; margin-top: 15px; margin: 0%;">샐러드</p>
+                            <p style="font-weight: bold; color: white; font-size: 13px;">신선한 계절 야채와 다양한 재료로 조화롭게 담아낸 샐러드</p>
+                        </div>
+                       
+                    </div>
+                </div>
+
+               </div>
                 
         </article>
         
