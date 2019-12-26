@@ -137,7 +137,7 @@
     var city_name = _path.id;
     var new_p = document.createElement('p');
     var province = $(_path).parent()[0].id;
-    d3.select(_path).style("fill", "#cbc3ac");
+    d3.select(_path).style({fill: "#cbc3ac", transition: "1s"});
     //console.log(city_name);
   }).mouseout(function(event) {
     var _path = event.target;
@@ -153,39 +153,39 @@
    
     var mapCondition = strArr[idx];;
     if (mapCondition == '세종특별자치시') {
-      $('#sejong').css("fill", "#cbc3ac");
+      $('#sejong').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition == '충청남도') {
-      $('#chungnam').css("fill", "#cbc3ac");
+      $('#chungnam').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition == '강원도') {
-      $('#gangwon').css("fill", "#cbc3ac");
+      $('#gangwon').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition =='제주특별자치도') {
-      $('#jeju').css({fill: "#cbc3ac", transition: ".5s"});
+      $('#jeju').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition =='경상남도') {
-      $('#gyeongnam').css("fill", "#cbc3ac");
+      $('#gyeongnam').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition == '경상북도') {
-      $('#gyeongbuk').css("fill", "#cbc3ac");
+      $('#gyeongbuk').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition =='전라북도') {
-      $('#jeonbuk').css("fill", "#cbc3ac");
+      $('#jeonbuk').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition =='충청북도') {
-      $('#chungbuk').css("fill", "#cbaaaa");
+      $('#chungbuk').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition =='경기도') {
-      $('#gyeonggi').css("fill", "#cbc3ac");
+      $('#gyeonggi').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition == '전라남도') {
-      $('#jeonnam').css("fill", "#cbc3ac");
+      $('#jeonnam').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition =='울산광역시') {
-      $('#ulsan').css("fill", "#cbc3ac");
+      $('#ulsan').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition =='부산광역시') {
-      $('#busan').css("fill", "#cbc3ac");
+      $('#busan').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition == '대구광역시') {
-      $('#daegu').css("fill", "#cbc3ac");
+      $('#daegu').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition =='대전광역시') {
-      $('#daejeon').css("fill", "#cbc3ac");
+      $('#daejeon').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition =='인천광역시') {
-      $('#incheon').css("fill", "#cbc3ac");
+      $('#incheon').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition =='서울특별시') {
-      $('#seoul').css("fill", "#cbc3ac");
+      $('#seoul').css({fill: "#cbc3ac", transition: "1s"});
     }else if (mapCondition =='광주광역시') {
-      $('#gwangju').css("fill", "#cbc3ac");
+      $('#gwangju').css({fill: "#cbc3ac", transition: "1s"});
     }
   
   }
@@ -199,39 +199,39 @@
    
     var mapCondition = strArr[idx];;
     if (mapCondition == '세종특별자치시') {
-      $('#sejong').css("fill", "#ffffff");
+      $('#sejong').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition == '충청남도') {
-      $('#chungnam').css("fill", "#ffffff");
+      $('#chungnam').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition == '강원도') {
-      $('#gangwon').css("fill", "#ffffff");
+      $('#gangwon').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition =='제주특별자치도') {
-      $('#jeju').css("fill", "#ffffff");
+      $('#jeju').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition =='경상남도') {
-      $('#gyeongnam').css("fill", "#ffffff");
+      $('#gyeongnam').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition == '경상북도') {
-      $('#gyeongbuk').css("fill", "#ffffff");
+      $('#gyeongbuk').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition =='전라북도') {
-      $('#jeonbuk').css("fill", "#ffffff");
+      $('#jeonbuk').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition =='충청북도') {
-      $('#chungbuk').css("fill", "#ffffff");
+      $('#chungbuk').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition =='경기도') {
-      $('#gyeonggi').css("fill", "#ffffff");
+      $('#gyeonggi').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition == '전라남도') {
-      $('#jeonnam').css("fill", "#ffffff");
+      $('#jeonnam').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition =='울산광역시') {
-      $('#ulsan').css("fill", "#ffffff");
+      $('#ulsan').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition =='부산광역시') {
-      $('#busan').css("fill", "#ffffff");
+      $('#busan').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition == '대구광역시') {
-      $('#daegu').css("fill", "#ffffff");
+      $('#daegu').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition =='대전광역시') {
-      $('#daejeon').css("fill", "#ffffff");
+      $('#daejeon').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition =='인천광역시') {
-      $('#incheon').css("fill", "#ffffff");
+      $('#incheon').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition =='서울특별시') {
-      $('#seoul').css("fill", "#ffffff");
+      $('#seoul').css({fill: "#ffffff", transition: "1s"});
     }else if (mapCondition =='광주광역시') {
-      $('#gwangju').css("fill", "#ffffff");
+      $('#gwangju').css({fill: "#ffffff", transition: "1s"});
     }
   }
       
