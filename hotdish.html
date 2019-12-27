@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>핫디쉬</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./hotdishimg/animate.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <!-- Popper JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- Latest compiled JavaScript -->
+    <script type="text/javascript" src="./hotdishimg/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+    <style>
+        body{margin: 0; padding: 0;}
+        #menuBigImg{
+            padding: 3em 0em;
+            text-align: center;
+            background-image: url('http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/board_title/gr_001.jpg') ;
+            background-size: cover;
+            height: 400px;
+            width: 100%;
+            color: white;  
+            display: table;
+        }
+        div span{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            
+        }
+        #footer{
+            position : absolute;
+            width: 100%;    
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+        #logo{
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+        nav{
+            position: absolute;
+            bottom: 20px;
+            left: 220px;
+            font-size: 16px;
+        }
+        nav li{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        nav li a{color: black; font-size:14px; font-weight: 900; }
+        nav li a:link{text-decoration: none;}
+        nav li a:hover{
+           transition: .4s;
+           color: rgb(238, 119, 0);
+           
+        }
+        nav li div:hover{ background-color: rgb(255, 171, 88); color: rgb(255, 255, 255);}
+
+        .secondMenu{
+            
+            background: rgba(255, 255, 255, 0.315);
+            /* display:none;  평상시에는 서브메뉴가 안보이게 하기 */
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .secondMenu li{  display: block;}
+        .secondMenu li a{ text-decoration: none;text-align: center;}
+        nav li:hover .secondMenu{
+            /* display: block; */
+            opacity: 1;
+            visibility: visible;
+            }
+        nav ul li #allMenu:hover .secondMenu{ opacity: 1; visibility: visible;}
+        #HeaderSecondMenu a{
+            background-color: null;
+            opacity: 1.0; 
+            color:white;
+            border: 1px solid white;    
+            width: 200px; 
+        }
+        section{width: 60%; margin-left: auto; margin-right: auto;}
+        .nomalFont{ font-size: 13px; font-weight: 900;}
+
+        .img-Bottom{
+            width: 100%;
+            height: 1;
+
+            background-color: black;
+            opacity: 0.7;
+        }
+
+
+    </style>
+
+    <script>
+        $(document).ready(function(){
+           
+        });
+    </script>
+
+</head>
+<body>
+
+    <div style="position: relative; width: auto; height: 95px;"> <!-- notice 영역-->
+        <div id="logo">
+            <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/site_logo.png">
+        </div>
+        <nav> <!--메뉴 리스트-->
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">브랜드이야기</a>
+                    <ul class="secondMenu">
+                        <li><a href="">인사말</a></li>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">BI소개</a></li>
+                        <li><a href="">연혁</a></li>
+                        <li><a href="">사회공헌활동</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">메뉴안내</a>
+                    <ul class="secondMenu">
+                        <li><a href="">스시·롤&샐러드바</a></li>
+                        <li><a href="">핫디쉬</a></li>
+                        <li><a href="">즉석코너</a></li>
+                        <li><a href="">디저트</a></li>
+                        <li><a href="">신메뉴 소개</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">메뉴찾기</a>
+                    <ul class="secondMenu">
+                        <li><a href="">쿠우쿠우 매장찾기</a></li>
+                    </ul>
+                </li>
+                <li><a href="">쿠우쿠우창업</a>
+                    <ul class="secondMenu">
+                        <li><a href="">개설절차</a></li>
+                        <li><a href="">가맹상담신청</a></li>
+                    </ul>
+                </li>
+                <li><a href="">고객지원</a>
+                    <ul class="secondMenu">
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">고객불편사항</a></li>
+                        <li><a href="">모바일상품권</a></li>
+                    </ul>
+                </li>
+                <li id="allMenu"><a href=""><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" alt="삼선"></a></li>
+                <li><a href="https://www.facebook.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_facebook.png" alt="f"></a></li>
+                <li><a href="https://www.instagram.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_insta.png" alt="카메라"></a></li>
+                <li><div style="border: 1px solid rgb(255, 171, 88); color: rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900; ">모바일상품권</div></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>   <!-- Header 영역 -->
+        <div id="menuBigImg">
+            <span>
+            <h3>Sushi.Roll salad Bar</h3>
+            <p>스시·롤·샐러드 뷔페의 선두주자가 되겠습니다.</p>
+                    <div class="basic-body container" style="padding-top: 100px;">
+                        <ul class="nav justify-content-center">
+                            <li id="HeaderSecondMenu" class="nav-item">
+                              <a  class="nav-link" href="#">스시·롤&샐러드바</a>
+                            </li>
+                            <li id= "HeaderSecondMenu" class="nav-item">
+                              <a style="background-color: rgb(238, 119, 0); opacity: 1.0; color:white;" class="nav-link" href="#">핫디쉬</a>
+                            </li>
+                            <li id="HeaderSecondMenu" class="nav-item">
+                                <a  class="nav-link" href="test5.html">즉석코너</a>
+                            </li>
+                            <li id="HeaderSecondMenu" class="nav-item">
+                                <a  class="nav-link" href="#">디저트</a>
+                            </li>
+                            <li id="HeaderSecondMenu" class="nav-item">
+                                <a  class="nav-link" href="#">신메뉴 소개</a>
+                            </li>
+                          </ul>
+                    </div>
+
+            </span>
+        </div>
+    </header>
+
+    <section>
+
+        <article> <!-- 글 -->
+            <div style="margin-top: 26px;">
+                <p style="font-size: 12px;"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/stit_bullet.gif">
+                <strong style="font-size: 24px;">즉석코너</strong> 스시·롤&샐러드 뷔페의 선두주자가 되겠습니다.</p>
+            </div>
+            <div class="nav justify-content-center" style="padding-top: 20px;">
+                <div class="wow fadeInUp"  style="animation-delay: 0.1s;">
+                <p class="container text-center" style="font-size: 14px; ">매일 아침 공급되는 신선한 양질의 재료로 다채로운 메뉴를 제공합니다.<br></p>
+           
+           
+                    <p class="container text-center" style="color:black;font-size: 24px;">쿠우쿠우의 <strong style="text-decoration: underline; font-weight: bold;text-decoration-color: rgb(238, 119, 0);">핫디쉬</strong>를 즐겨보세요.</p >
+                    </div>
+                </div>
+
+
+        </article>
+
+        <article >
+
+            <div class="nav justify-content-center" style="padding-top: 50px;">
+                <div class="wow fadeInUp"  style="animation-delay: 0.5s;">
+                <img  class="content" style="position: relative; margin-left: auto;margin-right:auto; " src="./hotdishimg/contentBg01.jpg" alt="">
+            </div>
+                <div class="img-Bottom" style="overflow: hidden;">
+                    <div style="display: flex; flex-direction: column; text-align: center;">
+                        <div class="wow fadeInUp"  style="animation-delay: 0.6s;">
+                        <strong style="font-weight: bold; color: white; margin-top: 14px; ">핫디쉬</strong>
+                        <p style="font-weight: bold; color: white; font-size: 13px;">남녀노소 즐겨찾는 핫푸드</p>
+                            
+                   
+            
+                </div>
+                </div>
+   
+        
+     
+            </div>
+
+    
+            </div>   
+
+        </article>
+
+    </section>
+
+
+    <div style="margin-top: 80px;" id="footer" class="footer">
+
+        <ul style="margin-top: 40px; margin-left: -50px; margin-right: auto; list-style:none;"class="icon" >
+            <li style="display: inline-block;"><a href="https://www.facebook.com/freshqooqoo/" target="_blank"><img src="./hotdishimg/facebook.png" alt="facebook"></a></li>
+            <li style="display: inline-block;" ><a href="https://www.instagram.com/freshqooqoo/" target="_blank"><img src="./hotdishimg/instagram.png" alt="instagram"></a></li style="display: inline-block;">
+            </ul>
+    <div class="logo"><img src="./hotdishimg/foot-logo.png" alt="logo"></div>
+    <p class="pcCopy"><img src="./hotdishimg/foot-copy.gif" alt="COPYRIGHT"></p>
+    </div>
+
+</body>
+</html>

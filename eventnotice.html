@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>이벤트</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 휴대폰과 모니터 비율이 달라도 똑같은 크기로 보이기-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <style>
         body{margin: 0; padding: 0;}
+        
         #menuBigImg{
             padding: 3em 0em;
             text-align: center;
@@ -28,7 +31,7 @@
             vertical-align: middle;
             text-align: center;
         }
-        #btn{ /* 쿠우쿠우 매장찾기 스타일 */
+        #btn{ 
             height: 40px;
             margin-left: auto;
             margin-right: auto;
@@ -37,7 +40,7 @@
             text-align: center;
             margin-left: auto;
             margin-right: auto;
-            padding-top: 6px; /*세로 가운데 정렬을 위해*/
+            padding-top: 6px; 
         }
         #logo{
             position: absolute;
@@ -73,7 +76,6 @@
         .secondMenu{
             
             background: rgba(255, 255, 255, 0.315);
-            /* display:none;  평상시에는 서브메뉴가 안보이게 하기 */
             padding: 0;
             margin: 0;
             text-align: center;
@@ -84,10 +86,8 @@
         .secondMenu li{  display: block;}
         .secondMenu li a{ text-decoration: none;text-align: center;}
         nav li:hover .secondMenu{
-            /* display: block; */
             opacity: 1;
             visibility: visible;
-
             }
         nav ul li #allMenu:hover .secondMenu{ opacity: 1; visibility: visible;}
         #btn{width: 90%; margin-left: auto; margin-right: auto;}
@@ -172,7 +172,7 @@
                               <a  class="nav-link" href="#">공지사항</a>
                             </li>
                             <li id= "HeaderSecondMenu" class="nav-item">
-                                <a style="background-color: rgb(238, 119, 0); opacity: 1.0; color:white;" class="nav-link" href="test.html">이벤트</a>
+                                <a style="background-color: rgb(238, 119, 0); opacity: 1.0; color:white;" class="nav-link" href="">이벤트</a>
                             </li>
                             <li id="HeaderSecondMenu" class="nav-item">
                                <a  class="nav-link" href="#">고객불편사항</a>
@@ -196,8 +196,8 @@
             </div>
         </article>
 
-        <article>
-            <div class="container" style="display: flex; justify-content: center; position: relative; height: 2800px;">
+        <article style="position: relative;">
+            <div class="container" style="width: 90%;display: flex; justify-content: center; position: relative; height: 2800px;">
 
             <div class="card"  style="position: absolute; width: 400px; top: 0px; left: 0px;">
                 <img  src="./eventimg/thumb-3743816712_L46rNmDi_b4bdbbcd17260b7f668b03b9a22c439d6bf44cdd_403x403.jpg" class="card-img-top" alt="...">
@@ -395,7 +395,7 @@
                 </ul>
 
             </article>
-        </section>
+        </section style="width: 90%;" >
 
 
         <div style="margin-top: 40px;"id="footer" class="footer">

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>가맹상담신청</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 휴대폰과 모니터 비율이 달라도 똑같은 크기로 보이기-->
 
@@ -68,7 +69,9 @@
            transition: .4s;
            color: rgb(238, 119, 0);
         }
+
         #footer{
+            position : absolute;
             width: 100%;    
             text-align: center;
             background-color: #f1f1f1;
@@ -174,10 +177,10 @@
                 <ul class="nav justify-content-center">
 
                     <li id="HeaderSecondMenu" class="nav-item">
-                        <a  class="nav-link"  href="test2.html">개설절차</a>
+                        <a  class="nav-link"  href="">개설절차</a>
                     </li>
                     <li id="HeaderSecondMenu" class="nav-item">
-                        <a style="background-color: rgb(238, 119, 0); opacity: 1.0; color:white;" class="nav-link" href="test3.html">가맹상담신청</a>
+                        <a style="background-color: rgb(238, 119, 0); opacity: 1.0; color:white;" class="nav-link" href="">가맹상담신청</a>
   
                     </li>
                   </ul>
@@ -250,7 +253,7 @@
                     <td class="nomalFont">이름</td>
                     <td><div class="input-group mb-1"  style="width:200px;" >
                         <div class="input-group-prepend">
-                          <span style= "margin-left: -40px;"class="input-group-text" id="basic-addon1"><img src="./founded2img/name.png" alt="" ></span>
+                          <span style= "margin-left: -40px;"class="input-group-text" id="basic-addon1"><img src="./consultationimg/name.png" alt="" ></span>
                         </div>
                         <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" >
                       </div></td>
@@ -260,7 +263,7 @@
                     <td>연락처</td>
                     <td><div class="input-group mb-1" style="width:200px;" >
                         <div class="input-group-prepend">
-                            <span style= "margin-left: -40px;"class="input-group-text" id="basic-addon1"><img src="./founded2img/phone.png" alt="" ></span>
+                            <span style= "margin-left: -40px;"class="input-group-text" id="basic-addon1"><img src="./consultationimg/phone.png" alt="" ></span>
                         </div>
                         <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" >
                       </div></td>
@@ -271,7 +274,7 @@
                     <td>이메일</td>
                     <td><div class="input-group mb-1" style="width:200px;" >
                         <div class="input-group-prepend">
-                            <span style= "margin-left: -40px;"class="input-group-text" id="basic-addon1"><img src="./founded2img/email.png" alt="" ></span>
+                            <span style= "margin-left: -40px;"class="input-group-text" id="basic-addon1"><img src="./consultationimg/email.png" alt="" ></span>
                         </div>
                         <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" >
                       </div></td>
@@ -347,9 +350,9 @@
                 </tr>
                 <tr>
                     <td>매장 희망 평수</td>
-                    <td><div  style= "margin-left: -40px;"class="input-group mb-1">
+                    <td><div style= "margin-left: -40px;"class="input-group mb-1">
                         <div class="input-group-prepend">
-                         
+                    
                            <button style="font-size: 12px;" class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">선택해주세요</button>
                               <div style="font-size: 12px;"class="dropdown-menu">
                                 <a class="dropdown-item" href="#">200평</a>
@@ -358,6 +361,8 @@
                                 <a class="dropdown-item" href="#">350평이상</a>
                   
                               </div>
+                         
+                              
                             </div>
 
                           </div>
@@ -377,6 +382,7 @@
                                 <a class="dropdown-item" href="#">50대</a>
                                 <a class="dropdown-item" href="#">60대이상</a>
                               </div>
+                     
                             </div>
 
                           </div>
@@ -423,7 +429,7 @@
                     <td>경험 브랜드명</td>
                     <td><div style= "margin-left: -40px;width:400px;" class="input-group mb-1"  >
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1"><img src="./founded2img/title.png" alt="" ></span>
+                            <span class="input-group-text" id="basic-addon1"><img src="./consultationimg/title.png" alt="" ></span>
                         </div>
                         <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" >
                       </div></td>
@@ -461,7 +467,7 @@
             <div class="row"  > <!-- 자동등록방지 창-->
                 <p class="nomalFont" style="margin-left:10px;font-size:12px;font-weight:bold;display: inline-block; padding-right: 200px;">자동등록방지</p>
                 <div style="  border: 1px solid rgb(221, 221, 221);">
-                    <img src="./founded2img/autoRegistration.png" alt="">
+                    <img src="./consultationimg/autoRegistration.png" alt="">
                     <img src="http://www.qooqoo.co.kr/img/captcha.png" alt="">
                     <textarea style="margin-top: 10px; width: 150px;height: 40px;"></textarea>
             
@@ -486,11 +492,11 @@
     <div style="margin-top: 40px;"id="footer" class="footer">
 
         <ul style=" margin-left: -50px; margin-right: auto; list-style:none;"class="icon" >
-            <li style="display: inline-block;"><a href="https://www.facebook.com/freshqooqoo/" target="_blank"><img src="./eventimg/facebook.png" alt="facebook"></a></li>
-            <li style="display: inline-block;" ><a href="https://www.instagram.com/freshqooqoo/" target="_blank"><img src="./eventimg/instagram.png" alt="instagram"></a></li style="display: inline-block;">
+            <li style="display: inline-block;"><a href="https://www.facebook.com/freshqooqoo/" target="_blank"><img src="./consultationimg/facebook.png" alt="facebook"></a></li>
+            <li style="display: inline-block;" ><a href="https://www.instagram.com/freshqooqoo/" target="_blank"><img src="./consultationimg/instagram.png" alt="instagram"></a></li style="display: inline-block;">
             </ul>
-    <div class="logo"><img src="./eventimg/foot-logo.png" alt="logo"></div>
-    <p class="pcCopy"><img src="./eventimg/foot-copy.gif" alt="COPYRIGHT"></p>
+    <div class="logo"><img src="./consultationimg/foot-logo.png" alt="logo"></div>
+    <p class="pcCopy"><img src="./consultationimg/foot-copy.gif" alt="COPYRIGHT"></p>
     </div>
 
 
