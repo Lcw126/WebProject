@@ -31,16 +31,12 @@
             text-align: center;
             
         }
-        #btn{ /* 쿠우쿠우 매장찾기 스타일 */
-            height: 40px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: rgb(238, 119, 0);
-            border: 1px solid white;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 6px; /*세로 가운데 정렬을 위해*/
+        #HeaderSecondMenu a{
+            background-color: null;
+            opacity: 1.0; 
+            color:white;
+            border: 1px solid white;    
+            width: 900px; 
         }
 
         #logo{
@@ -85,7 +81,7 @@
             visibility: visible;
             }
         nav ul li #allMenu:hover .secondMenu{ opacity: 1; visibility: visible;}
-        #btn{width: 90%; margin-left: auto; margin-right: auto;}
+      
 
         section{width: 60%; margin-left: auto; margin-right: auto;}
 
@@ -148,6 +144,8 @@
 	top: 5px;
 	right: 5px
 }
+
+#TrRow:hover{ background-color: rgb(250, 250, 250);}
         
    </style>
 
@@ -174,39 +172,7 @@
       $('#jeju').css({fill: "#BFAF26", transition: "1s"});
       
      
-	// $('#toa').parent().parent().hide();
-
-
-
-    var sWidth = window.innerWidth;
-		var sHeight = window.innerHeight;
-
-		var oWidth = $('.popupLayer').width();
-		var oHeight = $('.popupLayer').height();
- 
-    m;
-    $(document).mousemove(function(e){
-      m=e;
-    });
-
-		// 레이어가 나타날 위치를 셋팅한다.
-		var divLeft = m.pageX + 10; // e.clientX + 10;
-		var divTop =  m.pageY + 5; // e.clientY + 5;
-   
-		// 레이어가 화면 크기를 벗어나면 위치를 바꾸어 배치한다.
-		if( divLeft + oWidth > sWidth ) divLeft -= oWidth;
-		if( divTop + oHeight > sHeight ) divTop -= oHeight;
-
-		// 레이어 위치를 바꾸었더니 상단기준점(0,0) 밖으로 벗어난다면 상단기준점(0,0)에 배치하자.
-		if( divLeft < 0 ) divLeft = 0;
-		if( divTop < 0 ) divTop = 0;
-   
-		$('.popupLayer').css({
-      display:"block",
-			top: "divTop",
-			left: "divLeft",
-			position: "absolute" 
-		}).show();
+	
 
     }else if (mapCondition =='경상남도') {
       $('#gyeongnam').css({fill: "#BF6B26", transition: "1s"});
@@ -282,7 +248,7 @@
       $('#gwangju').css({fill: "#ffffff", transition: "1s"});
     }
   }
-      
+    function tableOnclikc(){alert('전체가 클릭됨.')}
       
    </script>
 
@@ -352,7 +318,16 @@
             <span>
             <h3>Sushi.Roll salad Bar</h3>
             <p>스시·롤·샐러드 뷔페의 선두주자가 되겠습니다.</p>
-            <p id="btn">쿠우쿠우 매장찾기</p>
+            <div class="basic-body container" style="padding-top: 100px;">
+              <ul class="nav justify-content-center">
+                  
+                  <li id="HeaderSecondMenu" class="nav-item">
+                      <a style="background-color: rgb(238, 119, 0); opacity: 1.0; color:white;" class="nav-link" href="#">쿠우쿠우 매장찾기</a>
+                  </li>
+                 
+                </ul>
+          </div>
+            <!-- <p id="btn">쿠우쿠우 매장찾기</p> -->
             </span>
         </div>
     </header>
@@ -373,9 +348,9 @@
 
          <div style="margin-left: 10%;"> <!-- 크게 2.지역구분-->
             <p style="padding-top: 10%;">◎지역 구분</p>
-            <table id="localTable">
+            <table id="localTable" style="cursor: pointer;">
                 <tr>
-                    <td>전체</td>
+                    <td onclick="tableOnclikc()">전체</td>
                     <td>서울</td>
                     <td>부산</td>
                     <td>대구</td>
@@ -417,7 +392,7 @@
 
 
         <article> <!-- 매장 정보 테이블 -->
-            <table class="table table-striped" style="width:100%;">
+            <table class="table" style="width:100%; border-top: 2px solid rgb(255, 155, 55);"> <!-- class="table table-striped" -->
                 <tr>
                     <th>번호</th>
                     <th>매장명</th>
@@ -426,7 +401,7 @@
                     <th>영업시간</th>
                     <th>매장특징</th>
                 </tr>
-                <tr>
+                <tr id="TrRow">
                     <td>1</td>
                     <td>원주혁신점</td>
                     <td>033-743-6274</td>
@@ -434,7 +409,7 @@
                     <td>11:00~22:00(음식 마감 오후9시, 매장별 상이)</td>
                     <td><img src="http://www.qooqoo.co.kr/data/file/storeship/thumb-977826508_xfP4rek8_dbd91b33f2fda43a7da4699d67c3cddff6a7f952_200x60.png" alt=""></td>
                 </tr>
-                <tr>
+                <tr id="TrRow">
                     <td>1</td>
                     <td>원주혁신점</td>
                     <td>033-743-6274</td>
@@ -442,7 +417,7 @@
                     <td>11:00~22:00(음식 마감 오후9시, 매장별 상이)</td>
                     <td><img src="http://www.qooqoo.co.kr/data/file/storeship/thumb-977826508_xfP4rek8_dbd91b33f2fda43a7da4699d67c3cddff6a7f952_200x60.png" alt=""></td>
                 </tr>
-                <tr>
+                <tr id="TrRow">
                     <td>1</td>
                     <td>원주혁신점</td>
                     <td>033-743-6274</td>
@@ -450,7 +425,7 @@
                     <td>11:00~22:00(음식 마감 오후9시, 매장별 상이)</td>
                     <td><img src="http://www.qooqoo.co.kr/data/file/storeship/thumb-977826508_xfP4rek8_dbd91b33f2fda43a7da4699d67c3cddff6a7f952_200x60.png" alt=""></td>
                 </tr>
-                <tr>
+                <tr id="TrRow">
                     <td>1</td>
                     <td>원주혁신점</td>
                     <td>033-743-6274</td>
@@ -458,7 +433,7 @@
                     <td>11:00~22:00(음식 마감 오후9시, 매장별 상이)</td>
                     <td><img src="http://www.qooqoo.co.kr/data/file/storeship/thumb-977826508_xfP4rek8_dbd91b33f2fda43a7da4699d67c3cddff6a7f952_200x60.png" alt=""></td>
                 </tr>
-                <tr>
+                <tr id="TrRow">
                     <td>1</td>
                     <td>원주혁신점</td>
                     <td>033-743-6274</td>
@@ -466,7 +441,7 @@
                     <td>11:00~22:00(음식 마감 오후9시, 매장별 상이)</td>
                     <td><img src="http://www.qooqoo.co.kr/data/file/storeship/thumb-977826508_xfP4rek8_dbd91b33f2fda43a7da4699d67c3cddff6a7f952_200x60.png" alt=""></td>
                 </tr>
-                <tr>
+                <tr id="TrRow">
                     <td>1</td>
                     <td>원주혁신점</td>
                     <td>033-743-6274</td>
@@ -474,7 +449,7 @@
                     <td>11:00~22:00(음식 마감 오후9시, 매장별 상이)</td>
                     <td><img src="http://www.qooqoo.co.kr/data/file/storeship/thumb-977826508_xfP4rek8_dbd91b33f2fda43a7da4699d67c3cddff6a7f952_200x60.png" alt=""></td>
                 </tr>
-                <tr>
+                <tr id="TrRow">
                     <td>1</td>
                     <td>원주혁신점</td>
                     <td>033-743-6274</td>
@@ -482,7 +457,7 @@
                     <td>11:00~22:00(음식 마감 오후9시, 매장별 상이)</td>
                     <td><img src="http://www.qooqoo.co.kr/data/file/storeship/thumb-977826508_xfP4rek8_dbd91b33f2fda43a7da4699d67c3cddff6a7f952_200x60.png" alt=""></td>
                 </tr>
-                <tr>
+                <tr id="TrRow">
                     <td>1</td>
                     <td>원주혁신점</td>
                     <td>033-743-6274</td>
@@ -490,7 +465,7 @@
                     <td>11:00~22:00(음식 마감 오후9시, 매장별 상이)</td>
                     <td><img src="http://www.qooqoo.co.kr/data/file/storeship/thumb-977826508_xfP4rek8_dbd91b33f2fda43a7da4699d67c3cddff6a7f952_200x60.png" alt=""></td>
                 </tr>
-                <tr>
+                <tr id="TrRow">
                     <td>1</td>
                     <td>원주혁신점</td>
                     <td>033-743-6274</td>
@@ -498,41 +473,15 @@
                     <td>11:00~22:00(음식 마감 오후9시, 매장별 상이)</td>
                     <td><img src="http://www.qooqoo.co.kr/data/file/storeship/thumb-977826508_xfP4rek8_dbd91b33f2fda43a7da4699d67c3cddff6a7f952_200x60.png" alt=""></td>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>원주혁신점</td>
-                    <td>033-743-6274</td>
-                    <td>강원도 원주시 황금로34, 3층</td>
-                    <td>11:00~22:00(음식 마감 오후9시, 매장별 상이)</td>
-                    <td><img src="http://www.qooqoo.co.kr/data/file/storeship/thumb-977826508_xfP4rek8_dbd91b33f2fda43a7da4699d67c3cddff6a7f952_200x60.png" alt=""></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>원주혁신점</td>
-                    <td>033-743-6274</td>
-                    <td>강원도 원주시 황금로34, 3층</td>
-                    <td>11:00~22:00(음식 마감 오후9시, 매장별 상이)</td>
-                    <td><img src="http://www.qooqoo.co.kr/data/file/storeship/thumb-977826508_xfP4rek8_dbd91b33f2fda43a7da4699d67c3cddff6a7f952_200x60.png" alt=""></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>원주혁신점</td>
-                    <td>033-743-6274</td>
-                    <td>강원도 원주시 황금로34, 3층</td>
-                    <td>11:00~22:00(음식 마감 오후9시, 매장별 상이)</td>
-                    <td><img src="http://www.qooqoo.co.kr/data/file/storeship/thumb-977826508_xfP4rek8_dbd91b33f2fda43a7da4699d67c3cddff6a7f952_200x60.png" alt=""></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>원주혁신점</td>
-                    <td>033-743-6274</td>
-                    <td>강원도 원주시 황금로34, 3층</td>
-                    <td>11:00~22:00(음식 마감 오후9시, 매장별 상이)</td>
-                    <td><img src="http://www.qooqoo.co.kr/data/file/storeship/thumb-977826508_xfP4rek8_dbd91b33f2fda43a7da4699d67c3cddff6a7f952_200x60.png" alt=""></td>
-                </tr>
-
-
             </table>
+
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><a style="color:black;"href="" class="page-link">&lt;</a></li >
+              <li class="page-item"><a style="background-color: rgb(238, 119, 0);border: 1px solid rgb(238, 119, 0);  color:white; " href="test.html" class="page-link">1</a></li>
+              <li class="page-item"><a style="color:black;"  href="" class="page-link">2</a></li >
+              <li class="page-item"><a style="color:black;"href="" class="page-link">&gt;</a></li>
+          </ul>
+
         </article>
     </section>
     
