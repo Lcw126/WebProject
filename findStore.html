@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 휴대폰과 모니터 비율이 달라도 똑같은 크기로 보이기-->
 
-    <script type="text/javascript" src="./d3.min.js"></script>
+    <!-- <script type="text/javascript" src="./d3.min.js"></script> -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jQuery library -->
@@ -87,7 +87,7 @@
         nav ul li #allMenu:hover .secondMenu{ opacity: 1; visibility: visible;}
         #btn{width: 90%; margin-left: auto; margin-right: auto;}
 
-        section{width: 90%; margin-left: auto; margin-right: auto;}
+        section{width: 60%; margin-left: auto; margin-right: auto;}
 
         .dg-map-area{
             float: left;
@@ -360,20 +360,19 @@
     <section>
 
 
-        <article> <!-- 지도 부분 -->
+        <article> <!-- 첫 번째 글 -->
             <div style="margin-top: 26px;">
                 <p><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/stit_bullet.gif">
                 <strong style="font-size: 24px;">쿠우쿠우매장 찾기</strong>스시·롤&샐러드 뷔페의 선두주자가 되겠습니다.</p>
             </div>
         </article>
 
-        <article style="background-color: rgb(255, 245, 242);"> <!---->
-          <div id="map" class="dg-map-area" style="display: inline; width: 40%; border: none;"> <!--크게 1-->
-            
+        <article style="background-color: rgb(247, 245, 242); border: 1px solid rgb(187, 187, 187); display: flex; flex-direction: row;"> <!-- 지도 & 매장 감싸는 div-->
+          <div id="map" class="dg-map-area" style="margin: 0; padding: 0; width: 30%; margin-left: 10%; border: none;"> <!--크게 1.지도-->
           </div>
 
-         <div style="display: inline;"> <!-- 크게 2-->
-            <p style="padding-top: 80px;">◎지역 구분</p>
+         <div style="margin-left: 10%;"> <!-- 크게 2.지역구분-->
+            <p style="padding-top: 10%;">◎지역 구분</p>
             <table id="localTable">
                 <tr>
                     <td>전체</td>
@@ -398,17 +397,17 @@
                     <td>제주도</td>
                 </tr>
             </table>
-            <p style="padding-top: 10px;">◎검색 대상</p>
-            <select style="width: 33%;">
+            <p style="padding-top: 30px;">◎검색 대상</p>
+            <select style="width: 100%; ">
                 <optgroup>
                     <option value="매장명">매장명</option>
                     <option value="주소">주소</option>
                     <option value="매장명+주소">매장명+주소</option>
                 </optgroup>
             </select>
-            <div style="padding-top: 10px; padding-bottom: 20px;">
-                <input type="text" placeholder="검색어 입력" style="width: 30%;">
-                <button >검색</button>
+            <div style="padding-top: 10px; padding-bottom: 60px; display: flex; flex-direction: row;">
+                <input type="text" placeholder="검색어 입력" style="width: 88%;">
+                <button>검색</button>
             </div>
 
          
