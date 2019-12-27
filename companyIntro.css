@@ -1,0 +1,7 @@
+ /* 반응형 웹 */
+ @media all and (max-width: 970px){
+    nav{
+        display: none;
+        /* flex-direction: column; */
+    }
+ }
