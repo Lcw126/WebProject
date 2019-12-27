@@ -3,7 +3,7 @@
 .headline-center {text-align:center; position:relative; margin-bottom:20px}
 .headline-center h2 {font-family:'Verdana'; color:#313131; font-weight:bold; font-size:22px; position:relative;}
 
-.header-slider{margin-bottom: 50px;}
+.header-slider{margin-bottom: 35px;}
 
 .icon-list{width: 85%; margin: 0 auto;}
 .icon-list i {display:inline-block;width:78px;height:78px;line-height:72px;text-align:center;color:#fff;border-radius:50% !important;font-size:20px;background:#aaa;position:relative;left: 105px;vertical-align:middle;}
@@ -32,12 +32,20 @@
 }
 
 /* NOTICE , MAP */
-.board_background{width:100%;background:#f7f7f7;}
+.board_background{width:100%;background:#f7f7f7;height: 365px; padding: 35px 36px;}
 .title{font-family:'Verdana'; margin:33px 0 18px; line-height:1; font-weight:bold; font-size:21px; color:#333;}
-.plus{position: relative; top:0; right:0; display:block; text-align:center; width:25px; height:25px; line-height:24px; font-size:17px; color:#fe9d35; font-weight:400; border:1px solid #fe9d35;}
+.noticeArea{margin: 0;}
+.board .noticeArea div {position:relative;}
+.plus{position: relative; top:0; left: 0; display:block; text-align:center; width:25px; height:25px; line-height:24px; font-size:17px; color:#fe9d35; font-weight:400; border:1px solid #fe9d35;}
 .plus:hover {background:#fe9d35; color:#fff; -webkit-transition:all 0.9s ease; transition:all 0.9s ease;}
 .board ul{margin-bottom:0; padding:0; list-style:none;}
 .board ul li{float:left;}
+.board > ul > li:first-child {width:31%; margin-left:2%; margin-right:4%;}
+.board-list{padding-top:10px; height:220px;}
+
+
+
+
 
 @media (max-width: 991px) {
     .wrapper {margin:54px 0 0 0;}
