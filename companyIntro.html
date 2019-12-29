@@ -85,7 +85,7 @@
             border: 1px solid white;    
             width: 200px; 
         }
-        section{width: 60%; margin-left: auto; margin-right: auto;}
+        section{width: 80%; margin-left: auto; margin-right: auto; }
 
        
         #mediumFont{ font-size: 22px; font-weight: 900;}
@@ -103,15 +103,15 @@
 
 </head>
 <body>
-
-    <div style="position: relative; width: auto; height: 95px;"> <!-- notice 영역-->
+ 
+    <div id="menuBar" style="position: relative; width: 100%; height: 95px;"> <!-- notice 영역-->
         <div id="logo">
-            <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/site_logo.png">
+            <img id="logoimg" src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/site_logo.png">
         </div>
         <nav> <!--메뉴 리스트-->
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">브랜드이야기</a>
+                <li id="bigMenu"><a href="">HOME</a></li>
+                <li id="bigMenu"><a href="">브랜드이야기</a>
                     <ul class="secondMenu">
                         <li><a href="">인사말</a></li>
                         <li><a href="">회사소개</a></li>
@@ -121,7 +121,7 @@
                     </ul>
                 </li>
 
-                <li><a href="">메뉴안내</a>
+                <li id="bigMenu"><a href="">메뉴안내</a>
                     <ul class="secondMenu">
                         <li><a href="">스시·롤&샐러드바</a></li>
                         <li><a href="">핫디쉬</a></li>
@@ -131,18 +131,18 @@
                     </ul>
                 </li>
 
-                <li><a href="">메뉴찾기</a>
+                <li id="bigMenu"><a href="">메뉴찾기</a>
                     <ul class="secondMenu">
                         <li><a href="">쿠우쿠우 매장찾기</a></li>
                     </ul>
                 </li>
-                <li><a href="">쿠우쿠우창업</a>
+                <li id="bigMenu"><a href="">쿠우쿠우창업</a>
                     <ul class="secondMenu">
                         <li><a href="">개설절차</a></li>
                         <li><a href="">가맹상담신청</a></li>
                     </ul>
                 </li>
-                <li><a href="">고객지원</a>
+                <li id="bigMenu"><a href="">고객지원</a>
                     <ul class="secondMenu">
                         <li><a href="">공지사항</a></li>
                         <li><a href="">이벤트</a></li>
@@ -151,9 +151,9 @@
                     </ul>
                 </li>
                 <li id="allMenu"><a href=""><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" alt="삼선"></a></li>
-                <li><a href="https://www.facebook.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_facebook.png" alt="f"></a></li>
-                <li><a href="https://www.instagram.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_insta.png" alt="카메라"></a></li>
-                <li><div style="border: 1px solid rgb(255, 171, 88); color: rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900; ">모바일상품권</div></li>
+                <li id="bigMenu"><a href="https://www.facebook.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_facebook.png" alt="f"></a></li>
+                <li id="bigMenu"><a href="https://www.instagram.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_insta.png" alt="카메라"></a></li>
+                <li id="bigMenu"><div style="border: 1px solid rgb(255, 171, 88); color: rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900; ">모바일상품권</div></li>
             </ul>
         </nav>
     </div>
@@ -161,9 +161,10 @@
     <header>   <!-- Header 영역 -->
         <div id="menuBigImg">
             <span>
-            <h3>Sushi.Roll salad Bar</h3>
-            <p>스시·롤·샐러드 뷔페의 선두주자가 되겠습니다.</p>
-                    <div class="basic-body container" style="padding-top: 100px;">
+            <h4 id="bigImgTitle1mobile" style="visibility: hidden;">브랜드이야기</h4>
+            <h3 id="bigImgTitle1">Sushi.Roll salad Bar</h3>
+            <p id="bigImgTitle1">스시·롤·샐러드 뷔페의 선두주자가 되겠습니다.</p>
+                    <div class="basic-body container" style="padding-top: 100px;" id="SecondMenu">
                         <ul class="nav justify-content-center">
                             <li id="HeaderSecondMenu" class="nav-item">
                               <a  class="nav-link" href="#">인사말</a>
@@ -185,6 +186,27 @@
 
             </span>
         </div>
+        <!-- mobile용 -->
+        <div class="basic-body container" id="mSecondMenu" style="display: none;" >
+            <ul class="nav justify-content-center">
+                <li id="HeaderSecondMenu" class="nav-item">
+                  <a  class="nav-link" href="#">인사말</a>
+                </li>
+                <li id= "HeaderSecondMenu" class="nav-item">
+                  <a style="background-color: rgb(238, 119, 0); opacity: 1.0; color:white;" class="nav-link" href="#">회사소개</a>
+                </li>
+                <li id="HeaderSecondMenu" class="nav-item">
+                    <a  class="nav-link" href="#">BI소개</a>
+                </li>
+                <li id="HeaderSecondMenu" class="nav-item">
+                    <a  class="nav-link" href="#">연혁</a>
+                </li>
+                <li id="HeaderSecondMenu" class="nav-item">
+                    <a  class="nav-link" href="#">사회공헌활동</a>
+                </li>
+              </ul>
+        </div>
+
     </header>
 
 
@@ -202,18 +224,18 @@
             </div>
         </article>
 
-        <article >
-            <div style="display: flex; flex-direction: row;">
+        <article>
+            <div id="mainContent" style="display: flex; flex-direction: row;">
                 <div style="display: flex; flex-direction: column; margin-right: 40px; animation-delay: 0.5s;"  class="wow fadeInUp">
                     <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/aboutus/aboutus_cont_img01.jpg">
                     <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/aboutus/aboutus_cont_img03.jpg" style="padding-top: 60px;">
-                    <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/aboutus/aboutus_number_img03.png" style="position: absolute; margin-top: 1250px;">
+                    <img id="imgNumber" src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/aboutus/aboutus_number_img03.png" style="position: absolute; margin-top: 1250px;">
                 </div>
 
 
                 <div style="display: flex; flex-direction: column; animation-delay: 1s;"  class="wow fadeInUp">
-                    <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/aboutus/aboutus_number_img01.png" style="position: absolute;">
-                    <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/aboutus/aboutus_number_img02.png" style="position: absolute; margin-top: 660px;">
+                    <img id="imgNumber"src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/aboutus/aboutus_number_img01.png" style="position: absolute;">
+                    <img id="imgNumber"src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/aboutus/aboutus_number_img02.png" style="position: absolute; margin-top: 660px;">
                     <p id="mediumFont" style="margin-top: 170px;">매일 아침, 전국 쿠우쿠우 매장에 공급되는 신선한 양질의<br>
                         재료로 120여 가지의 다채롭고 건강한 메뉴를 제공합니다.</p>
 
