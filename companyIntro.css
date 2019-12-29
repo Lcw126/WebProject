@@ -1,7 +1,31 @@
  /* 반응형 웹 */
  @media all and (max-width: 970px){
-    nav{
+     nav{left: 85%; } /* 메뉴리스트 삼선을 왼쪽에 위치하기 위해*/
+    #bigMenu{ /* 메뉴 li 에 id=bigMenu; 줌. 화면에 안보이기 위해*/
         display: none;
-        /* flex-direction: column; */
+        
     }
+    #allMenu{ display: block; margin-left: auto;} /* 삼선 id=allMenu; 삼선만 보이게 */
+
+    #logoimg{ width: 80px;}
+    #menuBar{  height: 65px;  } /*메뉴바  높이를 줄이려고 했지만 적용 안됨  ##### */
+    #menuBigImg{ /**/
+        padding: 3em 0em;
+        text-align: center;
+        background-image: url('http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/board_title/gr_001.jpg') ;
+        /* background-size: cover; */
+        height: 5%;
+        width: 100%;
+        color: white;  
+        display: table;
+    }
+    #bigImgTitle1{display: none;}
+    #bigImgTitle1mobile{visibility: visible; } /*'브랜드이야기'를 보이게 했지만 적용 안됨  ##### */
+    #mSecondMenu{ display:block; } /* 직은 메뉴를 새로 보이게 했지만 적용 안됨  ##### */
+    #SecondMenu{display: none;} /*원래 작은 메뉴를 안보이게 적용*/
+    
+    #mainContent{flex-wrap: wrap; flex-direction: column; };
+
+    #imgNumber{ position: static; margin: 0;}
+   
  }
