@@ -26,7 +26,7 @@
     
     #SecondMenu{display: flex; flex-direction: column;} /*원래 작은 메뉴를 안보이게 적용*/
 
-    #HeaderSecondMenuUl{flex-direction: column;margin-left: auto; margin-right: auto; margin-top: -30%;} /*작은 메뉴 수직 배열*/
+    #HeaderSecondMenuUl{flex-direction: column;margin-left: auto; margin-right: auto; margin-top: -25%;} /*작은 메뉴 수직 배열*/
 
     #mainContent{flex-wrap: wrap; flex-direction: column; };
 
