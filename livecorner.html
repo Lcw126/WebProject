@@ -29,11 +29,17 @@
             text-align: center;
             
         }
-        #footer{
-            position : absolute;
+        .footer{
+            position : relative;
             width: 100%;    
             text-align: center;
             background-color: #f1f1f1;
+            list-style:none; 
+            padding:0;
+        }
+        .Copy img{
+          width:100%;
+          max-width: 580px;
         }
         #logo{
             position: absolute;
@@ -96,11 +102,7 @@
 
     </style>
 
-    <script>
-        $(document).ready(function(){
-           
-        });
-    </script>
+
 
 </head>
 <body>
@@ -114,10 +116,10 @@
                 <li><a href="">HOME</a></li>
                 <li><a href="">브랜드이야기</a>
                     <ul class="secondMenu">
-                        <li><a href="">인사말</a></li>
+                        <li><a href="./greeting.html">인사말</a></li>
                         <li><a href="">회사소개</a></li>
                         <li><a href="">BI소개</a></li>
-                        <li><a href="">연혁</a></li>
+                        <li><a href="./history.html">연혁</a></li>
                         <li><a href="">사회공헌활동</a></li>
                     </ul>
                 </li>
@@ -125,9 +127,9 @@
                 <li><a href="">메뉴안내</a>
                     <ul class="secondMenu">
                         <li><a href="">스시·롤&샐러드바</a></li>
-                        <li><a href="">핫디쉬</a></li>
-                        <li><a href="">즉석코너</a></li>
-                        <li><a href="">디저트</a></li>
+                        <li><a href="./hotdish.html">핫디쉬</a></li>
+                        <li><a href="./livecorner.html">즉석코너</a></li>
+                        <li><a href="./desert.html">디저트</a></li>
                         <li><a href="">신메뉴 소개</a></li>
                     </ul>
                 </li>
@@ -139,14 +141,14 @@
                 </li>
                 <li><a href="">쿠우쿠우창업</a>
                     <ul class="secondMenu">
-                        <li><a href="">개설절차</a></li>
-                        <li><a href="">가맹상담신청</a></li>
+                        <li><a href="./openstep.html">개설절차</a></li>
+                        <li><a href="./consultation.html">가맹상담신청</a></li>
                     </ul>
                 </li>
                 <li><a href="">고객지원</a>
                     <ul class="secondMenu">
                         <li><a href="">공지사항</a></li>
-                        <li><a href="">이벤트</a></li>
+                        <li><a href="./eventnotice.html">이벤트</a></li>
                         <li><a href="">고객불편사항</a></li>
                         <li><a href="">모바일상품권</a></li>
                     </ul>
@@ -154,7 +156,7 @@
                 <li id="allMenu"><a href=""><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" alt="삼선"></a></li>
                 <li><a href="https://www.facebook.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_facebook.png" alt="f"></a></li>
                 <li><a href="https://www.instagram.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_insta.png" alt="카메라"></a></li>
-                <li><div style="border: 1px solid rgb(255, 171, 88); color: rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900; ">모바일상품권</div></li>
+                <li id="bigMenu" style="color:rgb(255, 171, 88);"><div style="border: 1px solid rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900;">모바일상품권</div></li>
             </ul>
         </nav>
     </div>
@@ -213,9 +215,9 @@
                 <div class="wow fadeInUp"  style="animation-delay: 0.5s;">
                 <img  class="content" style="position: relative; margin-left: auto;margin-right:auto; width: 100%; " src="./livecornerimg/contentBg01.jpg" alt="">
             </div>
-                <div class="img-Bottom" style="overflow: hidden;">
-                    <div style="display: flex; flex-direction: column; text-align: center;">
-                        <div class="wow fadeInUp"  style="animation-delay: 0.5s;">
+            <div class="img-Bottom wow fadeInUp" style="overflow: hidden;">
+                <div style="display: flex; flex-direction: column; text-align: center;">
+                    <div class="wow fadeInUp"  style="animation-delay: 0.5s;">
                         <strong style="font-weight: bold; color: white; margin-top: 14px; ">즉석코너</strong>
                         <p style="font-weight: bold; color: white; font-size: 13px;">눈 앞에서 조리하는 즉석코너</p>
                             
@@ -236,15 +238,17 @@
     </section>
 
 
-    <div style="margin-top: 80px;" id="footer" class="footer">
+    <div style="margin-top: 40px;"class="footer justify-content-center">
 
-        <ul style="margin-top: 40px; margin-left: -50px; margin-right: auto; list-style:none;"class="icon" >
+        <ul style="width: 100%; margin-left: -25px; list-style:none;"class="icon" >
             <li style="display: inline-block;"><a href="https://www.facebook.com/freshqooqoo/" target="_blank"><img src="./livecornerimg/facebook.png" alt="facebook"></a></li>
             <li style="display: inline-block;" ><a href="https://www.instagram.com/freshqooqoo/" target="_blank"><img src="./livecornerimg/instagram.png" alt="instagram"></a></li style="display: inline-block;">
             </ul>
     <div class="logo"><img src="./livecornerimg/foot-logo.png" alt="logo"></div>
-    <p class="pcCopy"><img src="./livecornerimg/foot-copy.gif" alt="COPYRIGHT"></p>
+    <div class="Copy"  style="display: inline-block;"><img src="./livecornerimg/foot-copy.gif" alt="COPYRIGHT"></div>
+
     </div>
+
 
 </body>
 </html>

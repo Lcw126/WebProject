@@ -25,19 +25,24 @@
             color: white;  
             display: table;
         }
-        #footer{
-        position : absolute;
-        width: 100%;    
-        text-align: center;
-        background-color: #f1f1f1;
-    }
         div span{
             display: table-cell;
             vertical-align: middle;
             text-align: center;
             
         }
-       
+        .footer{
+            position : relative;
+            width: 100%;    
+            text-align: center;
+            background-color: #f1f1f1;
+            list-style:none; 
+            padding:0;
+        }
+        .Copy img{
+          width:100%;
+          max-width: 580px;
+        }
         #logo{
             position: absolute;
             top: 20px;
@@ -89,6 +94,7 @@
         }
         section{width: 60%; margin-left: auto; margin-right: auto;}
         .nomalFont{ font-size: 13px; font-weight: 900;}
+
 
 
     </style>
@@ -151,7 +157,7 @@
                 <li id="allMenu"><a href=""><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" alt="삼선"></a></li>
                 <li><a href="https://www.facebook.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_facebook.png" alt="f"></a></li>
                 <li><a href="https://www.instagram.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_insta.png" alt="카메라"></a></li>
-                <li><div style="border: 1px solid rgb(255, 171, 88); color: rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900; ">모바일상품권</div></li>
+                <li id="bigMenu" style="color:rgb(255, 171, 88);"><div style="border: 1px solid rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900;">모바일상품권</div></li>
             </ul>
         </nav>
     </div>
@@ -307,15 +313,19 @@
 
 
     </section>
-    <div style="margin-top: 80px;" id="footer" class="footer">
 
-        <ul style="margin-top: 40px; margin-left: -50px; margin-right: auto; list-style:none;"class="icon" >
-            <li style="display: inline-block;"><a href="https://www.facebook.com/freshqooqoo/" target="_blank"><img src="./historyimg/facebook.png" alt="facebook"></a></li>
-            <li style="display: inline-block;" ><a href="https://www.instagram.com/freshqooqoo/" target="_blank"><img src="./historyimg/instagram.png" alt="instagram"></a></li style="display: inline-block;">
-            </ul>
-    <div class="logo"><img src="./historyimg/foot-logo.png" alt="logo"></div>
-    <p class="pcCopy"><img src="./historyimg/foot-copy.gif" alt="COPYRIGHT"></p>
-    </div>
+
+    <div style="margin-top: 40px;"class="footer justify-content-center">
+
+      <ul style="width: 100%; margin-left: -25px; list-style:none;"class="icon" >
+          <li style="display: inline-block;"><a href="https://www.facebook.com/freshqooqoo/" target="_blank"><img src="./historyimg/facebook.png" alt="facebook"></a></li>
+          <li style="display: inline-block;" ><a href="https://www.instagram.com/freshqooqoo/" target="_blank"><img src="./historyimg/instagram.png" alt="instagram"></a></li style="display: inline-block;">
+          </ul>
+  <div class="logo"><img src="./historyimg/foot-logo.png" alt="logo"></div>
+  <div class="Copy"  style="display: inline-block;"><img src="./historyimg/foot-copy.gif" alt="COPYRIGHT"></div>
+
+  </div>
+
 
 
 

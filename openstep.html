@@ -4,7 +4,14 @@
     <title>개설절차</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 휴대폰과 모니터 비율이 달라도 똑같은 크기로 보이기-->
+    <link rel="stylesheet" href="./openstepimg/animate.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <!-- Popper JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- Latest compiled JavaScript -->
+    <script type="text/javascript" src="./openstepimg/wow.min.js"></script>
 
+    <script> new WOW().init(); </script>
     <style>
         body{margin: 0; padding: 0;}
 
@@ -18,43 +25,23 @@
             color: white;  
             display: table;
         }
-        #HeaderSecondMenu a{
-            background-color: null;
-            opacity: 1.0; 
-            border: 1px solid white;    
-            color:white;
-            width: 450px; 
-        }
-        ul{ margin-left: 40px;  padding: 40; }
         div span{
             display: table-cell;
             vertical-align: middle;
             text-align: center;
             
         }
-        .contents{
- 
-        width: 90%;
-        margin: 10px auto;
-    }
- 
-        #footer{
-            position : absolute;
+        .footer{
+            position : relative;
             width: 100%;    
             text-align: center;
             background-color: #f1f1f1;
+            list-style:none; 
+            padding:0;
         }
-        #btn{ /* 쿠우쿠우 매장찾기 스타일 */
-
-            height: 40px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: rgb(238, 119, 0);
-            border: 1px solid white;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 6px; /*세로 가운데 정렬을 위해*/
+        .Copy img{
+          width:100%;
+          max-width: 580px;
         }
         #logo{
             position: absolute;
@@ -78,7 +65,7 @@
            color: rgb(238, 119, 0);
            
         }
-        nav li div:hover{color: rgb(255, 255, 255); background-color: rgb(255, 171, 88); }
+        nav li div:hover{ background-color: rgb(255, 171, 88); color: rgb(255, 255, 255);}
         .secondMenu{
             
             background: rgba(255, 255, 255, 0.315);
@@ -98,17 +85,19 @@
             visibility: visible;
             }
         nav ul li #allMenu:hover .secondMenu{ opacity: 1; visibility: visible;}
-        #btn{width: 90%; margin-left: auto; margin-right: auto;}
-        section{width: 90%; margin-left: auto; margin-right: auto;}
-   </style>
-    <link rel="stylesheet" href="./openstepimg/animate.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jQuery library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <!-- Popper JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- Latest compiled JavaScript -->
-    <script type="text/javascript" src="./openstepimg/wow.min.js"></script>
+        #HeaderSecondMenu a{
+            background-color: null;
+            opacity: 1.0; 
+            color:white;
+            border: 1px solid white;    
+            width: 500px; 
+        }
+        section{width: 60%; margin-left: auto; margin-right: auto;}
+        .nomalFont{ font-size: 13px; font-weight: 900;}
 
-    <script> new WOW().init(); </script>
+
+   </style>
+
 </head>
 <body>
     <div style="position: relative; width: auto; height: 95px;"> <!-- notice 영역-->
@@ -160,7 +149,7 @@
                 <li id="allMenu"><a href=""><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" alt="전체메뉴"></a></li>
                 <li><a href="https://www.facebook.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_facebook.png" alt="f"></a></li>
                 <li><a href="https://www.instagram.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_insta.png" alt="카메라"></a></li>
-                <li><div style="border: 1px solid rgb(255, 171, 88); color: rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900; ">모바일상품권</div></li>
+                <li id="bigMenu" style="color:rgb(255, 171, 88);"><div style="border: 1px solid rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900;">모바일상품권</div></li>
             </ul>
            
         </nav>
@@ -505,17 +494,21 @@
 
 </section>
 <div class="container">
-<p style="margin-left:55px;float:left;font-size:10px">※지방의 경우 공사비가 7% 추가 발생할 수 있습니다.<br>※상기표는 현장여건, 기타 사정에 따라 변경될 수 있습니다. (철거비용, 전기간선 공사비용 등)<br>신규입점제안은 E-mail : <a href="mailto:jumpo@qooqoo.co.kr">jumpo@qooqoo.co.kr</a>로 주시기 바랍니다.</p>
+<p style="float:left;font-size:10px">※지방의 경우 공사비가 7% 추가 발생할 수 있습니다.<br>※상기표는 현장여건, 기타 사정에 따라 변경될 수 있습니다. (철거비용, 전기간선 공사비용 등)<br>신규입점제안은 E-mail : <a href="mailto:jumpo@qooqoo.co.kr">jumpo@qooqoo.co.kr</a>로 주시기 바랍니다.</p>
 </div>
-    <div style="margin-top: 80px;" id="footer" class="footer">
 
-        <ul style="margin-top: 40px; margin-left: -50px; margin-right: auto; list-style:none;"class="icon" >
-            <li style="display: inline-block;"><a href="https://www.facebook.com/freshqooqoo/" target="_blank"><img src="./openstepimg/facebook.png" alt="facebook"></a></li>
-            <li style="display: inline-block;" ><a href="https://www.instagram.com/freshqooqoo/" target="_blank"><img src="./openstepimg/instagram.png" alt="instagram"></a></li style="display: inline-block;">
-            </ul>
-    <div class="logo"><img src="./openstepimg/foot-logo.png" alt="logo"></div>
-    <p class="pcCopy"><img src="./openstepimg/foot-copy.gif" alt="COPYRIGHT"></p>
-    </div>
+
+<div style="margin-top: 80px;"class="footer justify-content-center">
+
+    <ul style="width: 100%; margin-left: -25px; list-style:none;"class="icon" >
+        <li style="display: inline-block;"><a href="https://www.facebook.com/freshqooqoo/" target="_blank"><img src="./openstepimg/facebook.png" alt="facebook"></a></li>
+        <li style="display: inline-block;" ><a href="https://www.instagram.com/freshqooqoo/" target="_blank"><img src="./openstepimg/instagram.png" alt="instagram"></a></li style="display: inline-block;">
+        </ul>
+<div class="logo"><img src="./openstepimg/foot-logo.png" alt="logo"></div>
+<div class="Copy"  style="display: inline-block;"><img src="./openstepimg/foot-copy.gif" alt="COPYRIGHT"></div>
+
+</div>
+
 
     
    
