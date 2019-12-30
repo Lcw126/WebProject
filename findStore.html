@@ -14,7 +14,7 @@
     <style>
 
         body{margin: 0; padding: 0;}
-        #img_findstore{
+        /* #img_findstore{
             padding: 3em 0em;
             text-align: center;
             background-image: url('http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/board_title/gr_003.jpg') ;
@@ -23,7 +23,7 @@
             width: 100%;
             color: white;  
             display: table;
-        }
+        } */
         div span{
             display: table-cell;
             vertical-align: middle;
@@ -280,7 +280,7 @@
    </script>
 
 
-   
+<link rel="stylesheet" href="./findStore.css">
 
 </head>
 <body>
@@ -343,8 +343,8 @@
         
     </div>
 
-    <header>   <!-- Header 영역 -->
-        <div id="img_findstore">
+    <header >   <!-- Header 영역 -->
+        <div id="img_findstore" style="width: 100%;">
             <span>
             <h3>Sushi.Roll salad Bar</h3>
             <p>스시·롤·샐러드 뷔페의 선두주자가 되겠습니다.</p>
@@ -372,9 +372,9 @@
             </div>
         </article>
 
-        <article style="background-color: rgb(247, 245, 242); border: 1px solid rgb(187, 187, 187); display: flex; flex-direction: row;"> <!-- 지도 & 매장 감싸는 div-->
+        <article id="mapArea" style="background-color: rgb(247, 245, 242); border: 1px solid rgb(187, 187, 187); display: flex; flex-direction: row;"> <!-- 지도 & 매장 감싸는 div-->
          
-          <div id="map" class="dg-map-area" style="margin: 0; padding: 0; width: 30%; margin-left: 10%; border: none;"> <!--크게 1.지도-->
+          <div id="map" class="dg-map-area" style="margin: 0; padding: 0; width: 30%; margin-left: 0%; border: none;"> <!--크게 1.지도-->
             <div class="dg-map dg-map-in">
               <svg x="0" y="0" width="400" height="400" viewBox="0 0 800 1300" >
                 <!-- Add the polygon element. -->
@@ -417,7 +417,7 @@
     
           </div>
 
-         <div style="margin-left: 10%;"> <!-- 크게 2.지역구분-->
+         <div id="local" style="margin-left: 10%;"> <!-- 크게 2.지역구분-->
             <p style="padding-top: 10%;">◎지역 구분</p>
             <table id="localTable" style="cursor: pointer;">
                 <tr>
@@ -563,7 +563,7 @@
     </div>
 
     <footer>
-      <div style="margin-top: 40px;"id="footer" class="footer">
+      <!-- <div style="margin-top: 40px;"id="footer" class="footer">
 
           <ul style=" margin-left: -50px; margin-right: auto; list-style:none;"class="icon" >
               <li style="display: inline-block;"><a href="https://www.facebook.com/freshqooqoo/" target="_blank"><img src="./eventimg/facebook.png" alt="facebook"></a></li>
@@ -571,7 +571,7 @@
               </ul>
       <div class="logo"><img src="./eventimg/foot-logo.png" alt="logo"></div>
       <p class="pcCopy"><img src="./eventimg/foot-copy.gif" alt="COPYRIGHT"></p>
-      </div>
+      </div> -->
   </footer>
     
    
