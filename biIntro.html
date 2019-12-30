@@ -95,14 +95,7 @@
         }
     </style>
 
-    <script>
-
-        $(document).ready(function(){
-           
-        });
-
-    </script>
-
+<link rel="stylesheet" href="./biIntro.css">
 </head>
 <body>
 
@@ -155,7 +148,7 @@
                 <li id="allMenu"><a href=""><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" alt="삼선"></a></li>
                 <li><a href="https://www.facebook.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_facebook.png" alt="f"></a></li>
                 <li><a href="https://www.instagram.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_insta.png" alt="카메라"></a></li>
-                <li><div style="border: 1px solid rgb(255, 171, 88); color: rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900; ">모바일상품권</div></li>
+                <li  id="bigMenu" style="color:rgb(255, 171, 88);"><div style="border: 1px solid rgb(255, 171, 88); color: rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900; ">모바일상품권</div></li>
             </ul>
         </nav>
     </div>
@@ -193,18 +186,18 @@
     <section>
 
         <article  class="wow fadeInUp"> <!-- 글 -->
-            <div style="margin-top: 26px;">
+            <div id="topIntroContent" style="margin-top: 26px;">
                 <p style="font-size: 12px; font-weight: 600;"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/stit_bullet.gif">
                 <strong  style="font-size: 24px; font-weight: 550;">BI소개</strong > &nbsp;&nbsp;스시·롤&샐러드 뷔페의 선두주자가 되겠습니다.</p>
             </div>
-            <div > 
-                <img id="img" style="width: 100%; height: 280px; " src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/bi/bi_banner_img.jpg" alt="">
+            <div id="img" style="display: flex;"> 
+                <img id="img1" style="width: 100%; height: 280px;" src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/bi/bi_banner_img.jpg" alt="">
             </div>
             
         </article>
 
-        <article  class="wow fadeInUp" style="animation-delay: 0.6s;">
-            <table style="width: 100%; margin-top: 40px; border-bottom: 1px solid rgb(168, 168, 168); margin-bottom: 50px;">
+        <article  class="wow fadeInUp" style="display: flex; animation-delay: 0.6s; ">
+            <table id="table1" style="width: 100%; margin-top: 40px; border-bottom: 1px solid rgb(168, 168, 168); margin-bottom: 50px;">
                 <tr>
                     <td rowspan="2" style="border-top: 1px solid rgb(255, 156, 0); padding-bottom: 30%;"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/bi/bi_title_img.jpg" alt=""></td>
                     <td ><article style="font-size: 18px; font-weight: bold; border-top: 1px solid rgb(168, 168, 168);padding-top: 60px;">
@@ -216,8 +209,8 @@
                         식자재부터 매장까지 청결한 식품위생을 위해 최선을 다하겠습니다.</article> </td>
                 </tr>
 
-                <tr>
-                    <td style="padding-top: 30px; padding-bottom: 30px;"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/bi/bi_logo_img_mob.jpg" style="border: 1px solid rgb(168, 168, 168);" ></td>
+                <tr style="display: flex;">
+                    <td style="padding-top: 10%; padding-bottom: 10%;"><img id="img2" src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/bi/bi_logo_img_mob.jpg" style="border: 1px solid rgb(168, 168, 168);" ></td>
                 </tr>
             </table>
         </article>
