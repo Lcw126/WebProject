@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팀원 소개</title>
+
+    <style>
+        body{margin: 0; padding: 0;}
+
+        h1{text-align: center; margin-top: 2%;}
+
+        header{  /*단체 사진*/
+                position: absolute;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+                height: 400px;
+                width: 100%; margin-left: auto; margin-right: auto;
+                /* background-color: saddlebrown; */
+                z-index: 2; 
+            }
+        #backimg{  /*투명도 있는 뒷배경*/
+                max-width: 100%;
+                max-height: 100%;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                overflow: hidden;
+                position: absolute;
+                right: 0;
+                top: 0;
+                opacity: 0.3;
+                width: 100%; margin-left: auto; margin-right: auto;
+                z-index: 1;
+            }
+         
+            
+    </style>
+</head>
+<body>
+   
+    <h1>팀원 소개</h1>
+    <header>
+        <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/social/content_img02.jpg" > <!--단체 사진-->
+    </header>
+    <p>asd</p>
+    <section>
+        <div id="aa">
+            <div style="background-color: teal; width: 100px; height: 100px;"></div>
+            <div style="background-color: orangered; width: 100px; height: 100px;"></div>
+            <div style="background-color: royalblue; width: 100px; height: 100px;"></div>
+        </div>
+    </section>
+   
+        <img id="backimg" src="./storeImg.png"> <!--투명도 있는 뒷 배경이미지-->
+   
+   
+</body>
+</html>
