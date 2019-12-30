@@ -128,3 +128,12 @@
 	.carousel-caption {height:210px}
 	.carousel-caption h1 {font-size:24px;}
 }
+
+
+
+
+/* notice */
+.body{margin-top: 20px;}
+.body h3 {color:#232323; background:url('../imgs/stit_bullet.gif') 2px 10px no-repeat; padding-left:40px; padding-top:11px; padding-bottom:20px;}
+.body h3 span {font-size:13px; color:#565656; padding-left:12px;}
+.board-list{margin-top: 10px; margin-bottom: 20px;}
