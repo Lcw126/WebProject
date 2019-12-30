@@ -27,5 +27,7 @@
     #mainContent{flex-wrap: wrap; flex-direction: column; };
 
     #imgNumber{ position: static; margin: 0;}
+
+    .mediumFont{margin: 0%; padding-left: 0%;}
    
  }
