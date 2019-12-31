@@ -95,15 +95,24 @@
         #mediumFont{ font-size: 22px; font-weight: 900;}
         #smallFont{ font-size: 15px; font-weight: 900; color: rgb(134, 134, 134);}
 
-         #footer{
+        .footer{
+            position : relative;
             width: 100%;    
             text-align: center;
             background-color: #f1f1f1;
+            list-style:none; 
+            padding:0;
+        }
+        
+        .Copy img{
+          width:100%;
+          max-width: 580px;
         }
         
        
     </style>
 <link rel="stylesheet" href="./companyIntro.css">
+<link rel="stylesheet" href="./menubar.css">
    <script>
       
         $(document).ready(function(){
@@ -340,15 +349,16 @@
     </section>
 
     <footer>
-        <!-- <div style="margin-top: 40px;"id="footer" class="footer">
+        <div style="margin-top: 40px;"class="footer justify-content-center">
 
-            <ul style=" margin-left: -50px; margin-right: auto; list-style:none;"class="icon" >
+            <ul style="width: 100%; margin-left: -25px; list-style:none;"class="icon" >
                 <li style="display: inline-block;"><a href="https://www.facebook.com/freshqooqoo/" target="_blank"><img src="./eventimg/facebook.png" alt="facebook"></a></li>
                 <li style="display: inline-block;" ><a href="https://www.instagram.com/freshqooqoo/" target="_blank"><img src="./eventimg/instagram.png" alt="instagram"></a></li style="display: inline-block;">
                 </ul>
         <div class="logo"><img src="./eventimg/foot-logo.png" alt="logo"></div>
-        <p class="pcCopy"><img src="./eventimg/foot-copy.gif" alt="COPYRIGHT"></p>
-        </div> -->
+        <div class="Copy"  style="display: inline-block;"><img src="./eventimg/foot-copy.gif" alt="COPYRIGHT"></div>
+    
+        </div>
     </footer>
 
 </body>
