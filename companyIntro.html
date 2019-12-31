@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="animate.css">
 
     <script type="text/javascript" src="wow.min.js"></script>
-    
-      <script> new WOW().init(); </script>
+    <script> new WOW().init(); </script>
 
     <title>회사소개</title>
     <style>
@@ -104,7 +103,30 @@
         
     </style>
 <link rel="stylesheet" href="./companyIntro.css">
-   
+   <script>
+      
+        $(document).ready(function(){
+             $("#allMenu").click(function(){
+               
+                if($("#hiddenList").css('display') !== 'none'){ //  if($("#hiddenList").is(":visible")){
+                    $("#hiddenList").slideUp();  
+                    alert('업');
+                    // $("#hiddenList").css({display:"none"});
+                    // jQuery('#hiddenList').css("display", "none");   alert('업');
+                    // jQuery('#hiddenList').hide();  alert('업');
+                    // $('#hiddenList li').css('visibility','hidden');  alert('업');
+
+                }else{
+                    $("#hiddenList").slideDown(3000);
+                    alert('보여주기 다운'); 
+                    // $("#hiddenList").css("display", "block");
+                    // $("#hiddenList").css({display : "block"});
+                    // jQuery('#hiddenList').css("display", "block"); 
+                }
+            });
+        });
+
+   </script>
 
 </head>
 <body>
@@ -162,6 +184,15 @@
             </ul>
         </nav>
     </div>
+    
+
+    <ul id="hiddenList" class="example01" style="display: none; background-color: orange; height:10%;">
+        <li>내용</li>
+        <li>내용</li>
+        <li>내용</li>
+    </ul>
+      
+    
 
     <header>   <!-- Header 영역 -->
         <div id="menuBigImg">
