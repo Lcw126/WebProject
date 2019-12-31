@@ -56,7 +56,7 @@
            color: rgb(238, 119, 0);
            
         }
-        nav li div:hover{ background-color: rgb(97, 83, 70); color: rgb(255, 255, 255);}
+        nav li #memberintro:hover{ background-color: rgb(238, 119, 0); color: rgb(255, 255, 255); font-weight: 900;}
         .secondMenu{
             
             background: rgba(255, 255, 255, 0.692);
@@ -101,28 +101,19 @@
             background-color: #f1f1f1;
         }
         
+       
     </style>
 <link rel="stylesheet" href="./companyIntro.css">
    <script>
       
         $(document).ready(function(){
-             $("#allMenu").click(function(){
-               
-                if($("#hiddenList").css('display') !== 'none'){ //  if($("#hiddenList").is(":visible")){
-                    $("#hiddenList").slideUp();  
-                    alert('업');
-                    // $("#hiddenList").css({display:"none"});
-                    // jQuery('#hiddenList').css("display", "none");   alert('업');
-                    // jQuery('#hiddenList').hide();  alert('업');
-                    // $('#hiddenList li').css('visibility','hidden');  alert('업');
-
-                }else{
-                    $("#hiddenList").slideDown(3000);
-                    alert('보여주기 다운'); 
-                    // $("#hiddenList").css("display", "block");
-                    // $("#hiddenList").css({display : "block"});
-                    // jQuery('#hiddenList').css("display", "block"); 
-                }
+             $("#MallMenu").click(function(){
+                // if($("#hiddenList").css('display') !== 'none'){ //  if($("#hiddenList").is(":visible")){
+                //     $("#hiddenList").slideUp();  
+                // }else{
+                //     $("#hiddenList").slideDown();               
+                // }
+                $("#hiddenList").toggle(1000);  
             });
         });
 
@@ -177,23 +168,93 @@
                         <li style="margin-bottom: 10px;"><a href=""  style=" padding-right: 40px;">모바일상품권</a></li>
                     </ul>
                 </li>
-                <li id="allMenu"><a href=""><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" alt="삼선"></a></li>
+                <li id="bigMenu"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" style="cursor: pointer;" alt="삼선"></li>
+                <!-- <li id="MallMenu"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" style="cursor: pointer; display: block; height: 5%; background-color: orange;" alt="삼선"></li> -->
+               
+                <li id="MallMenu"> <!--모바일형 웹 삼선 -->
+                    <nav class="navbar navbar-expand-lg navbar-dark" style="position: absolute; margin: 0; padding: 0; background-color: rgb(238, 119, 0);">
+                        <div class="container">
+                            <!-- 2.2 모바일 화면일 때 오른쪽 끝에 햄버그아이콘 모양의 메뉴를 네비게이션이 변경 -->
+                            <button  class="navbar-toggler" data-toggle="collapse" data-target="#navMenu" ><span class="navbar-toggler-icon"  ></span></button>
+                            <!-- 2.3 네비메뉴 -->
+                        </div>
+                    </nav>
+                </li>
+
                 <li id="bigMenu"><a href="https://www.facebook.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_facebook.png" alt="f"></a></li>
                 <li id="bigMenu"><a href="https://www.instagram.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_insta.png" alt="카메라"></a></li>
-                <li id="bigMenu"><div style="border: 1px solid rgb(255, 171, 88); color: rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900; ">모바일상품권</div></li>
+                <li style="color: rgb(255, 255, 255);" id="bigMenu"><div id="memberintro" style="border: 1px solid rgb(255, 171, 88); color: rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900; ">팀원 소개</div></li>
             </ul>
         </nav>
     </div>
     
 
-    <ul id="hiddenList" class="example01" style="display: none; background-color: orange; height:10%;">
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
+    <ul id="hiddenList" class="example01" style="display: none; list-style:none;  padding-left:0px;">
+        <li>
+            <button class="btn btn-secondary " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: black;">
+              HOME
+            </button>
+        </li>
+
+        <li>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: black;">
+                 브랜드이야기
+                </button>
+                <div class="dropdown-menu" style="width: 100%;">
+                    <a class="dropdown-item" href="#">인사말</a>
+                    <a class="dropdown-item" href="#">회사소개</a>
+                    <a class="dropdown-item" href="#">BI소개</a>
+                    <a class="dropdown-item" href="#">연혁</a>
+                </div>
+            </div>
+        </li>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: black;">
+                메뉴안내
+                </button>
+                <div class="dropdown-menu" style="width: 100%;">
+                <a class="dropdown-item" href="#">스시·롤&샐러드바</a>
+                <a class="dropdown-item" href="#">핫디쉬</a>
+                <a class="dropdown-item" href="#">즉석코너</a>
+                <a class="dropdown-item" href="#">디저트</a>
+                <a class="dropdown-item" href="#">신메뉴 소개</a>
+                </div>
+            </div>
+        <li>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: black;">
+                메뉴찾기
+                </button>
+                <div class="dropdown-menu" style="width: 100%;">
+                    <a class="dropdown-item" href="#">쿠우쿠우 매장찾기</a>
+                </div>
+            </div>
+        </li>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: black;">
+                    쿠우쿠우창업
+                </button>
+                <div class="dropdown-menu" style="width: 100%;">
+                    <a class="dropdown-item" href="#">개설절차</a>
+                    <a class="dropdown-item" href="#">가맹상담신청</a>
+                </div>
+            </div>
+        <li>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: black;">
+                    고객지원
+                </button>
+                <div class="dropdown-menu" style="width: 100%;">
+                    <a class="dropdown-item" href="#">공지사항</a>
+                    <a class="dropdown-item" href="#">이벤트</a>
+                    <a class="dropdown-item" href="#">고객불편사항</a>
+                    <a class="dropdown-item" href="#">모바일상품권</a>
+                </div>
+            </div>
+        </li>
     </ul>
       
-    
-
     <header>   <!-- Header 영역 -->
         <div id="menuBigImg">
             <span>
@@ -222,8 +283,6 @@
 
             </span>
         </div>
-        
-
     </header>
 
 
@@ -243,7 +302,7 @@
 
         <article>
             <div id="mainContent" style="display: flex; flex-direction: row;">
-                <div style="display: flex; flex-direction: column; margin-right: 40px; animation-delay: 0.5s;"  class="wow fadeInUp">
+                <div style="display: flex; flex-direction: column; animation-delay: 0.5s; margin-left: auto; margin-right: auto; width: 100%;"  class="wow fadeInUp">
                     <img id="img" src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/aboutus/aboutus_cont_img01.jpg" style=" margin-left: auto; margin-right: auto; width: 100%;">
                     <img id="imgNumber"src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/aboutus/aboutus_number_img01.png" style="position: absolute; margin-left: 30%;">
                     
@@ -252,7 +311,7 @@
                 </div>
 
 
-                <div style="display: flex; flex-direction: column; animation-delay: 1s;  margin-left: auto; margin-right: auto; width: 100%;"  class="wow fadeInUp">
+                <div style="display: flex; flex-direction: column; animation-delay: 1s;  margin-left: auto; margin-right: auto; width: 100%; padding-left: 5%;"  class="wow fadeInUp">
                     
                     <img id="imgNumber"src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/aboutus/aboutus_number_img02.png" style="position: absolute; margin-top: 660px;">
                     <p id="mediumFont" style="margin-top: 170px;">매일 아침, 전국 쿠우쿠우 매장에 공급되는 신선한 양질의<br>
