@@ -15,8 +15,8 @@
     #menuBigImg{ /**/
         padding: 3em 0em;
         text-align: center;
-        background-image: url('http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/board_title/gr_001.jpg') ;
-        /* background-size: cover; */
+        /* background-image: url('http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/board_title/gr_001.jpg') ; */
+        background-size: cover;
         height: 5%;
         width: 100%;
         color: white;  
