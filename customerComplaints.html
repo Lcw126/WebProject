@@ -101,6 +101,51 @@
         }
     </style>
     <link rel="stylesheet" href="./customerComplaints.css">
+    <script>
+
+        function writeFinish(){ GoToEnroll();}
+
+        function GoToEnroll() {
+    
+            var obEmail = document.getElementById("email");
+    
+            if (!obEmail.value) {
+                 obEmail.focus();
+    
+                return;
+    
+            } else {
+    
+                if (!CheckEmail(obEmail.value)) {
+    
+                    alert("이메일 형식이 잘못되었습니다");
+    
+                    obEmail.focus();
+    
+                    return;
+    
+                }
+    
+            }
+    
+        }
+    
+        function CheckEmail(str) {
+    
+            var reg_email = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+    
+            if (!reg_email.test(str)) {
+    
+                return false;
+    
+            } else {
+    
+                return true;
+    
+            }
+    
+        }
+    </script>
 </head>
 <body>
     <div style="position: relative; width: auto; height: 95px;"> <!-- notice 영역-->
@@ -212,7 +257,7 @@
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="basic-addon1"><img src="./ComplaintsImg/phone.png" alt=""></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" style="width: 120px;" required onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                       </div></td>
                 </tr>
 
@@ -222,7 +267,7 @@
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="basic-addon1"><img src="./ComplaintsImg/cellphone.png" alt=""></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" style="width: 120px;" required onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                       </div></td>
                 </tr>
 
@@ -232,7 +277,7 @@
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="basic-addon1"><img src="./ComplaintsImg/email.png" alt=""></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                        <input id="email" type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                       </div></td>
                 </tr>
 
@@ -340,7 +385,7 @@
         <div class="basic-body container" style="padding-bottom: 60px; padding-top: 20px;">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a style="background-color: rgb(238, 119, 0); opacity: 1.0; color:white; width: 140px; text-align: center;" class="nav-link" href="#">작성완료</a>
+                    <a style="background-color: rgb(238, 119, 0); opacity: 1.0; color:white; width: 140px; text-align: center;" class="nav-link" href="#" onclick="writeFinish()">작성완료</a>
                 </li>
 
                 <li class="nav-item" style="padding-left: 10px;">
