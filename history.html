@@ -5,12 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./historyimg/animate.css">
+    <link rel="stylesheet" href="./menubar.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <!-- Popper JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- Latest compiled JavaScript -->
     <script type="text/javascript" src="./historyimg/wow.min.js"></script>
     <script> new WOW().init(); </script>
+    <script>
+
+      $(document).ready(function(){
+           $("#MallMenu").click(function(){
+              // if($("#hiddenList").css('display') !== 'none'){ //  if($("#hiddenList").is(":visible")){
+              //     $("#hiddenList").slideUp();  
+              // }else{
+              //     $("#hiddenList").slideDown();               
+              // }
+              $("#hiddenList").toggle(1000);  
+          });
+      });
+ </script>
     <style>
 
 
@@ -99,97 +113,175 @@
 
     </style>
 
-    <script>
-        $(document).ready(function(){
-           
-        });
-    </script>
+
 
 </head>
+
 <body>
-
-    <div style="position: relative; width: auto; height: 95px;"> <!-- notice 영역-->
-        <div id="logo">
-            <img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/site_logo.png">
-        </div>
-        <nav> <!--메뉴 리스트-->
-            <ul>
-              <li><a href="">HOME</a></li>
-              <li><a href="">브랜드이야기</a>
-                  <ul class="secondMenu">
-                      <li><a href="./greeting.html">인사말</a></li>
-                      <li><a href="">회사소개</a></li>
-                      <li><a href="">BI소개</a></li>
-                      <li><a href="./history.html">연혁</a></li>
-                      <li><a href="">사회공헌활동</a></li>
-                  </ul>
-              </li>
-
-              <li><a href="">메뉴안내</a>
-                  <ul class="secondMenu">
-                      <li><a href="">스시·롤&샐러드바</a></li>
-                      <li><a href="./hotdish.html">핫디쉬</a></li>
-                      <li><a href="./livecorner.html">즉석코너</a></li>
-                      <li><a href="./desert.html">디저트</a></li>
-                      <li><a href="">신메뉴 소개</a></li>
-                  </ul>
-              </li>
-
-              <li><a href="">메뉴찾기</a>
-                  <ul class="secondMenu">
-                      <li><a href="">쿠우쿠우 매장찾기</a></li>
-                  </ul>
-              </li>
-              <li><a href="">쿠우쿠우창업</a>
-                  <ul class="secondMenu">
-                      <li><a href="./openstep.html">개설절차</a></li>
-                      <li><a href="./consultation.html">가맹상담신청</a></li>
-                  </ul>
-              </li>
-              <li><a href="">고객지원</a>
-                  <ul class="secondMenu">
-                      <li><a href="">공지사항</a></li>
-                      <li><a href="./eventnotice.html">이벤트</a></li>
-                      <li><a href="">고객불편사항</a></li>
-                      <li><a href="">모바일상품권</a></li>
-                  </ul>
-              </li>
-                <li id="allMenu"><a href=""><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" alt="삼선"></a></li>
-                <li><a href="https://www.facebook.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_facebook.png" alt="f"></a></li>
-                <li><a href="https://www.instagram.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_insta.png" alt="카메라"></a></li>
-                <li id="bigMenu" style="color:rgb(255, 171, 88);"><div style="border: 1px solid rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900;">모바일상품권</div></li>
-            </ul>
-        </nav>
+  <div id="menuBar" style="position: relative; width: 100%; height: 95px;"> <!-- notice 영역-->
+    <div id="logo">
+        <img id="logoimg" src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/site_logo.png">
     </div>
+    <nav> <!--메뉴 리스트-->
+        <ul>
+            <li id="bigMenu"><a href="" style=" padding-bottom: 45px;">HOME</a></li>
+            <li id="bigMenu"><a href="" style=" padding-bottom: 45px;">브랜드이야기</a>
+                <ul class="secondMenu">
+                    <li style="margin-bottom: 10px;"><a href="" style=" padding-right: 40px;">인사말</a></li>
+                    <li style="margin-bottom: 10px;"><a href="" style=" padding-right: 40px;">회사소개</a></li>
+                    <li style="margin-bottom: 10px;"><a href="" style=" padding-right: 40px;">BI소개</a></li>
+                    <li style="margin-bottom: 10px;"><a href="" style=" padding-right: 40px;">연혁</a></li>
+                    <!-- <li><a href="">사회공헌활동</a></li> -->
+                </ul>
+            </li>
 
-    <header>   <!-- Header 영역 -->
-        <div id="menuBigImg">
-            <span>
-            <h3>Sushi.Roll salad Bar</h3>
-            <p>스시·롤·샐러드 뷔페의 선두주자가 되겠습니다.</p>
-                    <div class="basic-body container" style="padding-top: 100px;">
-                        <ul class="nav justify-content-center">
-                            <li id="HeaderSecondMenu" class="nav-item">
-                              <a  class="nav-link" href="./greeting.html">인사말</a>
-                            </li>
-                            <li id= "HeaderSecondMenu" class="nav-item">
-                              <a  class="nav-link" href="#">회사소개</a>
-                            </li>
-                            <li id="HeaderSecondMenu" class="nav-item">
-                                <a class="nav-link" href="#">BI소개</a>
-                            </li>
-                            <li id="HeaderSecondMenu" class="nav-item">
-                                <a  style="background-color: rgb(238, 119, 0); opacity: 1.0; color:white;" class="nav-link" href="./history.html">연혁</a>
-                            </li>
-                            <li id="HeaderSecondMenu" class="nav-item">
-                                <a  class="nav-link" href="#">사회공헌활동</a>
-                            </li>
-                          </ul>
+            <li id="bigMenu"><a href="" style=" padding-bottom: 45px;">메뉴안내</a>
+                <ul class="secondMenu">
+                    <li style="margin-bottom: 10px;"><a href="" style=" padding-right: 40px;">스시·롤&샐러드바</a></li>
+                    <li style="margin-bottom: 10px;"><a href="" style=" padding-right: 40px;">핫디쉬</a></li>
+                    <li style="margin-bottom: 10px;"><a href="" style=" padding-right: 40px;">즉석코너</a></li>
+                    <li style="margin-bottom: 10px;"><a href="" style=" padding-right: 40px;">디저트</a></li>
+                    <li style="margin-bottom: 10px;"><a href="" style=" padding-right: 40px;">신메뉴 소개</a></li>
+                </ul>
+            </li>
+
+            <li id="bigMenu"><a href="" style=" padding-bottom: 45px;">메뉴찾기</a>
+                <ul class="secondMenu">
+                    <li style="margin-bottom: 10px;"><a href="" style=" padding-right: 40px;">쿠우쿠우 매장찾기</a></li>
+                </ul>
+            </li>
+            <li id="bigMenu"><a href="" style=" padding-bottom: 45px;">쿠우쿠우창업</a>
+                <ul class="secondMenu">
+                    <li style="margin-bottom: 10px;"><a href="" style=" padding-right: 40px;">개설절차</a></li>
+                    <li style="margin-bottom: 10px;"><a href="" style=" padding-right: 40px;">가맹상담신청</a></li>
+                </ul>
+            </li>
+            <li id="bigMenu"><a href="" style=" padding-bottom: 45px;">고객지원</a>
+                <ul class="secondMenu">
+                    <li style="margin-bottom: 10px;"><a href=""  style=" padding-right: 40px;">공지사항</a></li>
+                    <li style="margin-bottom: 10px;"><a href=""  style=" padding-right: 40px;">이벤트</a></li>
+                    <li style="margin-bottom: 10px;"><a href=""  style=" padding-right: 40px;">고객불편사항</a></li>
+                    <li style="margin-bottom: 10px;"><a href=""  style=" padding-right: 40px;">모바일상품권</a></li>
+                </ul>
+            </li>
+            <li id="bigMenu"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" style="cursor: pointer;" alt="삼선"></li>
+            <!-- <li id="MallMenu"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" style="cursor: pointer; display: block; height: 5%; background-color: orange;" alt="삼선"></li> -->
+           
+            <li id="MallMenu"> <!--모바일형 웹 삼선 -->
+                <nav class="navbar navbar-expand-lg navbar-dark" style="position: absolute; margin: 0; padding: 0; background-color: rgb(238, 119, 0);">
+                    <div class="container">
+                        <!-- 2.2 모바일 화면일 때 오른쪽 끝에 햄버그아이콘 모양의 메뉴를 네비게이션이 변경 -->
+                        <button  class="navbar-toggler" data-toggle="collapse" data-target="#navMenu" ><span class="navbar-toggler-icon"  ></span></button>
+                        <!-- 2.3 네비메뉴 -->
                     </div>
+                </nav>
+            </li>
 
-            </span>
+            <li id="bigMenu"><a href="https://www.facebook.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_facebook.png" alt="f"></a></li>
+            <li id="bigMenu"><a href="https://www.instagram.com/freshqooqoo/" target="_sub"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/top_ico_insta.png" alt="카메라"></a></li>
+            <li id="bigMenu" style="color:rgb(255, 171, 88);"><div id="memberintro" style="border: 1px solid rgb(255, 171, 88); font-size: 10px; display: inline; padding: 5px;font-weight: 900;">팀원 소개</div></li>
+        </ul>
+    </nav>
+</div>
+
+
+<ul id="hiddenList" class="example01" style="display: none; list-style:none;  padding-left:0px;">
+    <li>
+        <button class="btn btn-secondary " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: black;">
+          HOME
+        </button>
+    </li>
+
+    <li>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: black;">
+             브랜드이야기
+            </button>
+            <div class="dropdown-menu" style="width: 100%;">
+                <a class="dropdown-item" href="#">인사말</a>
+                <a class="dropdown-item" href="#">회사소개</a>
+                <a class="dropdown-item" href="#">BI소개</a>
+                <a class="dropdown-item" href="#">연혁</a>
+            </div>
         </div>
-    </header>
+    </li>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: black;">
+            메뉴안내
+            </button>
+            <div class="dropdown-menu" style="width: 100%;">
+            <a class="dropdown-item" href="#">스시·롤&샐러드바</a>
+            <a class="dropdown-item" href="#">핫디쉬</a>
+            <a class="dropdown-item" href="#">즉석코너</a>
+            <a class="dropdown-item" href="#">디저트</a>
+            <a class="dropdown-item" href="#">신메뉴 소개</a>
+            </div>
+        </div>
+    <li>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: black;">
+            메뉴찾기
+            </button>
+            <div class="dropdown-menu" style="width: 100%;">
+                <a class="dropdown-item" href="#">쿠우쿠우 매장찾기</a>
+            </div>
+        </div>
+    </li>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: black;">
+                쿠우쿠우창업
+            </button>
+            <div class="dropdown-menu" style="width: 100%;">
+                <a class="dropdown-item" href="#">개설절차</a>
+                <a class="dropdown-item" href="#">가맹상담신청</a>
+            </div>
+        </div>
+    <li>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: black;">
+                고객지원
+            </button>
+            <div class="dropdown-menu" style="width: 100%;">
+                <a class="dropdown-item" href="#">공지사항</a>
+                <a class="dropdown-item" href="#">이벤트</a>
+                <a class="dropdown-item" href="#">고객불편사항</a>
+                <a class="dropdown-item" href="#">모바일상품권</a>
+            </div>
+        </div>
+    </li>
+</ul>
+  
+<header>   <!-- Header 영역 -->
+    <div id="menuBigImg">
+        <span>
+        <h4 id="bigImgTitle1mobile" style="visibility: hidden;">브랜드이야기</h4>
+        <h3 id="bigImgTitle1">Sushi.Roll salad Bar</h3>
+        <p id="bigImgTitle1">스시·롤·샐러드 뷔페의 선두주자가 되겠습니다.</p>
+                <div class="basic-body container" style="padding-top: 100px;" id="SecondMenu">
+                    <ul id="HeaderSecondMenuUl" class="nav justify-content-center">
+
+
+                        <li id="HeaderSecondMenu" class="nav-item">
+                            <a  class="nav-link" href="#">인사말</a>
+                          </li>
+                        <li id="HeaderSecondMenu" class="nav-item">
+                            <a  class="nav-link" href="#">회사소개</a>
+                        </li>
+                        <li id="HeaderSecondMenu" class="nav-item">
+                            <a  class="nav-link" href="#">BI소개</a>
+                        </li>
+                        <li id= "HeaderSecondMenu" class="nav-item">
+                          <a style="background-color: rgb(238, 119, 0); opacity: 1.0; color:white;" class="nav-link" href="#">연혁</a>
+                        </li>
+                        <li id="HeaderSecondMenu" class="nav-item">
+                            <a  class="nav-link" href="#">사회공헌활동</a>
+                        </li>
+                      </ul>
+                </div>
+
+        </span>
+    </div>
+</header>
 
 
     <section>
@@ -199,112 +291,166 @@
                 <p style="font-size: 12px;"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/page/img/stit_bullet.gif">
                 <strong style="font-size: 24px;">연혁</strong> 스시·롤&샐러드 뷔페의 선두주자가 되겠습니다.</p>
             </div>
-            <div class="container">
+            <div class="container text-center">
                 <div class="row">
-                  <div  style="margin-top: 20px;"class="col align-self-start">
+                  <div class="col-sm">
                     <div class="wow fadeInUp" >
                     <strong  style="float:right;font-size:30px;color: rgb(255, 171, 88);">2018</strong>
                     <br><br>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">2018 고객감동 브랜드 대상 수상</p>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">2018 대한민국 소비자 만족도 1위</p>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">2018 올해의 브랜드 대상</p>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">2018 소비자가 뽑은 올해의 브랜드 대상</p>
+            
+                    <p style="font-weight:bold;float:right;font-size: 12px;">2018 고객감동 브랜드 대상 수상<br></p>
+                    <p style="font-weight:bold;float:right;font-size: 12px;">2018 대한민국 소비자 만족도 1위<br></p>
+                    <p style="font-weight:bold;float:right;font-size: 12px;">2018 올해의 브랜드 대상<br></p>
+                    <p style="font-weight:bold;float:right;font-size: 12px;">2018 소비자가 뽑은 올해의 브랜드 대상<br></p>
+            
                     </div>
                   </div>
-                  <div class="col align-self-center">
-           
-
+                  <div class="col-sm">
                   </div>
-                  <div style="margin-top: 100px;" class="col align-self-end">
+                  <div class="col-sm">
+                  </div>
+                </div>
+              </div>
+              <div class="container  text-center">
+                <div class="row">
+                  <div class="col-sm">
+                  </div>
+                  <div class="col-sm">
+                  </div>
+
+                  <div class="col-sm">
                     <div class="wow fadeInUp"  style="animation-delay: 0.2s;">
-                    <strong  style="float:left;font-size:30px;color: rgb(255, 171, 88);">2017</strong>
-                    <br><br>
-                    <p style="font-weight:bold;float:left;font-size: 15px;">2017 고객만족 브랜드 경영대상</p>
-                    <p style="font-weight:bold;float:left;font-size: 15px;">소비자가 뽑은 올해의 브랜드대상</p>
-                    <p style="font-weight:bold;float:left;font-size: 15px;">2017 올해의 브랜드 대상수상</p>
-                    <p style="font-weight:bold;float:left;font-size: 15px;">2017년 12월 광저우점 계약 및 가맹점 110호점 달성</p>
-                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container  text-center">
-                <div class="row">
-                  <div class="col align-self-start">
-                    <div class="wow fadeInUp"  style="animation-delay: 0.4s;">
-                    <strong  style="float:right;font-size:30px;color: rgb(255, 171, 88);">2016</strong>
-                    <br><br>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">2016 상반기 대학생 선호브랜드 대상 <br>무한리필부문 수상(헤럴드경제)</p>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">대학생 선호 브랜드대상</p>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">고객 선호 브랜드지수 1위</p>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">2016년 12월 광저우점 계약 및 가맹점 100호점 달성</p>
-                    </div>
-                  </div>
-                  <div class="col align-self-center">
-       
+                      <strong  style="float:left;font-size:30px;color: rgb(255, 171, 88);">2017</strong>
+                      <br><br>
+                      <p style="font-weight:bold;float:left;font-size: 12px;">2017 고객만족 브랜드 경영대상<br></p>
+                      <p style="font-weight:bold;float:left;font-size: 12px;">소비자가 뽑은 올해의 브랜드대상<br></p>
+                      <p style="font-weight:bold;float:left;font-size: 12px;">2017 올해의 브랜드 대상수상<br></p>
+                      <p style="font-weight:bold;float:left;font-size: 12px;">2017년 12월 광저우점 계약 및 가맹점 110호점 달성<br></p>
 
-                  </div>
-                  <div  style="margin-top: 100px;"class="col align-self-end">
-                    <div class="wow fadeInUp"  style="animation-delay: 0.6s;">
-                    <strong  style="float:left;font-size:30px;color: rgb(255, 171, 88);">2015</strong>
-                    <br><br>
-                    <p style="font-weight:bold;float:left;font-size: 15px;">대한민국 올해의 히트상품대상 수상 (조선일보)</p>
-                    <p style="font-weight:bold;float:left;font-size: 15px;">2015 대한민국 올해의 히트상품대상 수상<br>(디지털조선일보)</p>
-                    <p style="font-weight:bold;float:left;font-size: 15px;">가맹점 80호 달성</p>
-                    <p style="font-weight:bold;float:left;font-size: 15px;">중국대련점 착공</p>
-                    <p style="font-weight:bold;float:left;font-size: 15px;">쿠우쿠우 본사 사옥 입주 및 성남 제1본점 개점</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container  text-center">
-                <div class="row">
-                  <div class="col align-self-start">
-                    <div class="wow fadeInUp"  style="animation-delay: 0.8s;">
-                    <strong  style="float:right;font-size:30px;color: rgb(255, 171, 88);">2014</strong>
-                    <br><br>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">대한민국 고객감동 일류 브랜드 대상 외식 <br>프랜차이즈 부문 수상 (스포츠조선)</p>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">대한민국 미래경영 대상 외식사업 부문 수상 <br>(헤럴드경제)</p>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">대한민국을 빛낸 한국 인물 대상 외식 <br>프랜차이즈 공로 부문 수상 (민주신문사)</p>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">중국 연변점 개점</p>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">호주 브리즈번점 개점</p>
-                    </div>
-                  </div>
-                  <div class="col align-self-center">
-               
 
-                  </div>
-                  <div style="margin-top: 80px;"class="col align-self-end">
-                    <div class="wow fadeInUp"  style="animation-delay: 1.0s;">
-                    <strong  style="float:left;font-size:30px;color: rgb(255, 171, 88);">2013</strong>
-                    <br><br>
-                    <p style="font-weight:bold;float:left;font-size: 15px;">특별기획 Best Inovation 기업 &amp; 브랜드유망 창업<br>프랜차이즈 부문 수상 (스포츠서울)</p>
-                    <p style="font-weight:bold;float:left;font-size: 15px;">대한민국 문화경영 대상 유망 <br>프랜차이즈 부문 수상(헤럴드 경제)</p>
-                    <p style="font-weight:bold;float:left;font-size: 15px;">가맹점 30호점 달성</p>
-                    </div>
                   </div>
                 </div>
               </div>
               <div class="container text-center">
                 <div class="row">
-                  <div style="margin-top: 60px;"class="col align-self-start">
-                    <div class="wow fadeInUp"  style="animation-delay: 1.2s;">
-                    <strong  style="float:right;font-size:30px;color: rgb(255, 171, 88);">2011</strong>
-                    <br><br>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">쿠우쿠우 상표등록 및 안산 1호점 개점</p>
-                    <p style="font-weight:bold;float:right;font-size: 15px;">(주)쿠우쿠우 설립</p>
-                 
-                    <div  style="float:right;"class="imgs"><span><img src="./historyimg/2011_img.jpg"></span></div>
+                  <div class="col-sm">
+
+                    <div class="wow fadeInUp"  style="animation-delay: 0.4s;">
+                      <strong  style="float:right;font-size:30px;color: rgb(255, 171, 88);">2016</strong>
+                      <br><br>
+                      <p style="font-weight:bold;float:right;font-size: 12px;">2016 상반기 대학생 선호브랜드 대상 <br>무한리필부문 수상(헤럴드경제)<br></p>
+                      <p style="font-weight:bold;float:right;font-size: 12px;">대학생 선호 브랜드대상<br></p>
+        
+                      <p style="font-weight:bold;float:right;font-size: 12px;">2016년 12월 광저우점 계약 및 가맹점 100호점 달성<br></p>
+                      </div>
+  
                   </div>
+                  <div class="col-sm">
+               
+
                   </div>
-                  <div class="col align-self-center">
+                  <div class="col-sm">
+                  </div>
+                </div>
+              </div>
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col-sm">
+
+
+                  </div>
+                  <div class="col-sm">
+               
+
+                  </div>
+                  <div class="col-sm">
+    
+
+                      
+                    <div class="wow fadeInUp"  style="animation-delay: 0.6s;">
+                      <strong  style="float:left;font-size:30px;color: rgb(255, 171, 88);">2015</strong>
+                      <br><br>
+                      <p style="font-weight:bold;float:left;font-size: 12px;">대한민국 올해의 히트상품대상 수상<br>(조선일보)<br></p>
+                      <p style="font-weight:bold;float:left;font-size: 12px;">2015 대한민국 올해의 히트상품대상 수상<br>(디지털조선일보)<br></p>
+                      <p style="font-weight:bold;float:left;font-size: 12px;">가맹점 80호 달성<br></p>
+                      <p style="font-weight:bold;float:left;font-size: 12px;">쿠우쿠우 본사 사옥 입주 및 <br>성남 제1본점 개점<br></p>
+                      </div>
+               
+        
+                  </div>
+                </div>
+              </div>
+
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col-sm">
+  
+                      <div class="wow fadeInUp"  style="animation-delay: 0.8s;">
+                        <strong  style="float:right;font-size:30px;color: rgb(255, 171, 88);">2014</strong>
+                        <br><br>
+                        <p style="font-weight:bold;float:right;font-size: 12px;">대한민국 고객감동 일류 브랜드 대상 외식 프랜차이즈 부문 수상 <br>(스포츠조선)<br></p>
+                        <p style="font-weight:bold;float:right;font-size: 11px;">대한민국 미래경영 대상 외식사업 부문 수상 <br>(헤럴드경제)<br></p>
+                        <p style="font-weight:bold;float:right;font-size: 12px;">대한민국을 빛낸 한국 인물 대상 외식 <br>프랜차이즈 공로 부문 수상 <br> (민주신문사)<br></p>
+                        <p style="font-weight:bold;float:right;font-size: 12px;">중국 연변점 개점<br></p>
+
+                        </div>
+
+
+                  </div>
+                  <div class="col-sm">
              
 
                   </div>
-                  <div class="col align-self-end">
+                  <div class="col-sm">
 
                   </div>
                 </div>
               </div>
+
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col-sm">
+  
+                  </div>
+                  <div class="col-sm">
+      
+                  </div>
+                  <div class="col-sm">
+                    <div class="wow fadeInUp"  style="animation-delay: 1.0s;">
+                    <strong  style="float:left;font-size:30px;color: rgb(255, 171, 88);">2013</strong>
+                    <br><br>
+                    <p style="font-weight:bold;float:left;font-size: 12px;">특별기획 Best Inovation 기업 <br>브랜드유망 창업<br>프랜차이즈 부문 수상 (스포츠서울)<br.</p>
+                    <p style="font-weight:bold;float:left;font-size: 12px;">대한민국 문화경영 대상 유망 <br>프랜차이즈 부문 수상(헤럴드 경제)<br></p>
+           
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col-sm">
+  
+                      <div class="wow fadeInUp"  style="animation-delay: 1.1s;">
+  
+
+                    <strong  style="float:right;font-size:30px;color: rgb(255, 171, 88);">2011</strong>
+                    <br><br>
+                    <p style="font-weight:bold;float:right;font-size: 12px;">쿠우쿠우 상표등록 및 안산 1호점 개점<br></p>
+                    <p style="font-weight:bold;float:right;font-size: 12px;">(주)쿠우쿠우 설립<br></p>
+                 
+                    <div  style="float:right;"class="imgs"><span><img src="./historyimg/2011_img.jpg"></span></div>
+                        </div>
+                  </div>
+                  <div class="col-sm">
+
+                  </div>
+                  <div class="col-sm">
+
+                  </div>
+                </div>
+              </div>
+
+
     </article>
 
 
