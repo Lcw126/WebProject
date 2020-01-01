@@ -214,8 +214,8 @@
 
 </head>
 <body>
-    <nav id="topMenu" >
-        <ul id="allmenuList">
+    <nav id="topMenu"  style="z-index: 3;">
+        <ul id="allmenuList"  style="z-index: 3;">
                 <li id="mList" style="right:600px;">브랜드이야기
                     <ul id="sListUl" >
                         <li id="sList"><a class="menuLink" href="../soonhyeon/greeting.html">인사말</a></li>
@@ -329,16 +329,18 @@
         </nav>
     </div>
 
-    <ul id="hiddenList" class="example01" style="display: none; list-style:none;  padding-left:0px;">
-        <li>
-            <button class="btn btn-secondary" onclick="location.href='../index.html'" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: rgb(91, 91, 91); font-weight: 600;">
-              HOME
-            </button>
+    <ul id="hiddenList" class="example01" style="display: none; list-style:none;  padding-left:0px; z-index: 3;">
+        <li >
+            <div class="dropdown"style="z-index: 3;">
+                <button class="btn btn-secondary" onclick="location.href='../index.html'" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: rgb(91, 91, 91); font-weight: 600;">
+                HOME
+                </button>
+            </div>
         </li>
 
         <li>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: rgb(91, 91, 91); font-weight: 600;">
+            <div class="dropdown" style="z-index: 3;">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: rgb(91, 91, 91); font-weight: 600; z-index: 3;">
                  브랜드이야기
                 </button>
                 <div class="dropdown-menu " style="width: 100%;">
@@ -349,7 +351,7 @@
                 </div>
             </div>
         </li>
-            <div class="dropdown">
+            <div class="dropdown" style="z-index: 3;">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: rgb(91, 91, 91); font-weight: 600;">
                 메뉴안내
                 </button>
@@ -362,7 +364,7 @@
                 </div>
             </div>
         <li>
-            <div class="dropdown">
+            <div class="dropdown" style="z-index: 3;">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: rgb(91, 91, 91); font-weight: 600;">
                 매장찾기
                 </button>
@@ -371,7 +373,7 @@
                 </div>
             </div>
         </li>
-            <div class="dropdown">
+            <div class="dropdown" style="z-index: 3;">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: rgb(91, 91, 91); font-weight: 600;">
                     쿠우쿠우창업
                 </button>
@@ -381,7 +383,7 @@
                 </div>
             </div>
         <li>
-            <div class="dropdown">
+            <div class="dropdown" style="z-index: 3;">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; background-color: white; color: rgb(91, 91, 91); font-weight: 600;">
                     고객지원
                 </button>

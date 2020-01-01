@@ -149,38 +149,7 @@
         }
         
 /* 큰 웹화면 삼선 스타일 */
-        .secondMenu{
-            
-            background: rgba(255, 255, 255, 0.692);
-            width: 23%;
-            
-            /* display:none;  평상시에는 서브메뉴가 안보이게 하기 */
-            padding: 0;
-            margin: 0;
-            border-top: 1.5px solid orange;
-            
-            margin-top: 5%;
-            /* text-align: center; */
-            position: absolute;
-            opacity: 0;
-            visibility: hidden;
-        }
-        .secondMenu li{  display: block;}
-        .secondMenu li a{ text-decoration: none;text-align: center;}
-        nav li:hover .secondMenu{
-            /* display: block; */
-            opacity: 1;
-            visibility: visible;
-            }
-        nav ul li #allMenu:hover li .secondMenu{ opacity: 1; visibility: visible;}
-
-        #HeaderSecondMenu a{
-            background-color: null;
-            opacity: 1.0; 
-            color:white;
-            border: 1px solid white;    
-            width: 200px; 
-        }
+       
         section{width: 60%; margin-left: auto; margin-right: auto;}
 
         .nomalFont{ font-size: 13px; font-weight: 900;}
@@ -203,7 +172,7 @@
     <link rel="stylesheet" href="./customerComplaints.css">
     <link rel="stylesheet" href="../chanwoo/menubar.css">
     <script>
-
+         $(document).ready(function(){
             $("#MallMenu").click(function(){
                 if($("#hiddenList").css('display') !== 'none'){ //  if($("#hiddenList").is(":visible")){
                     $("#hiddenList").slideUp();  
@@ -220,7 +189,7 @@
                 $("#allmenuList").slideDown();               
             }       
             });
-
+        });
 
         function writeFinish(){ GoToEnroll();}
 
