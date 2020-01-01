@@ -45,9 +45,9 @@
             left: 220px;
             font-size: 16px;
         }
-        nav li{
+        nav #bigMenu{
             display: inline-block;
-            margin-left: 20px;
+            margin-left: 30px;
         }
         nav li a{color: black; font-size:14px; font-weight: 900; }
         nav li a:link{text-decoration: none;}
@@ -68,7 +68,7 @@
             border-top: 1.5px solid orange;
             
             margin-top: 3%;
-            /* text-align: center; */
+            text-align: center;
             position: absolute;
             opacity: 0;
             visibility: hidden;
@@ -89,6 +89,69 @@
             border: 1px solid white;    
             width: 200px; 
         }
+/* 큰 웹화면 삼선 스타일 */
+        #topMenu {   
+                height: 0px; 
+                width: 60%;    
+                position: relative;
+                top: 95px;
+               
+        }
+       
+        #topMenu ul #mList {                      
+                list-style: none;           
+                color: black;    
+                font-weight: 900;          
+                background-color: rgba(255, 255, 255, 0.692);  
+                float: left;               
+                line-height: 30px;         
+                vertical-align: middle;    
+                text-align: center; 
+                border-top: 1px solid orange;
+                position: absolute;
+               
+
+        }
+        #topMenu .menuLink {                               
+                text-decoration:none;                      
+                color: rgb(85, 85, 85);  
+                                        
+                display: block;                           
+                width: 150px;                              
+                font-size: 12px;                           
+                font-weight: bold;                         
+                font-family: "Trebuchet MS", Dotum, Arial; 
+                
+        }
+        #topMenu .menuLink:hover {            
+            transition: .4s;
+           color: rgb(238, 119, 0);
+        }
+        #sList{
+            list-style: none;           
+                float: left;               
+                line-height: 30px;         
+                vertical-align: middle;    
+                text-align: center;   
+                
+        }
+        #sListUl{
+            display: flex; flex-direction: column; padding-left: 0;
+            border-right: 1px solid rgba(226, 226, 226, 0.767);
+            
+        }
+        #hoo:hover{
+            background-color: black;
+            
+        }
+        #allmenuList{
+            margin-left: 5%;
+            display: none;
+        }
+        
+/* 큰 웹화면 삼선 스타일 */
+
+
         section{width: 80%; margin-left: auto; margin-right: auto; }
 
        
@@ -108,6 +171,8 @@
           width:100%;
           max-width: 580px;
         }
+
+        
         
        
     </style>
@@ -124,18 +189,77 @@
                 }
                 // $("#hiddenList").toggle(1000);  
             });
+
+            $(".adidas").click(function(){
+            if($("#allmenuList").css('display') !== 'none'){ //  if($("#hiddenList").is(":visible")){
+                $("#allmenuList").slideUp();  
+            }else{
+                $("#allmenuList").slideDown();               
+            }       
+            });
+
         });
 
    </script>
 
 </head>
 <body>
- 
-    <div id="menuBar" style="position: relative; width: 100%; height: 95px;"> <!-- notice 영역-->
+    <nav id="topMenu" >
+        <ul id="allmenuList">
+                <li id="mList" style="right:600px;">브랜드이야기
+                    <ul id="sListUl" >
+                        <li id="sList"><a class="menuLink" href="">인사말</a></li>
+                        <li id="sList"><a class="menuLink" href="">회사소개</a></li>
+                        <li id="sList"><a class="menuLink" href="">BI소개</a></li>
+                        <li id="sList"><a class="menuLink" href="">연혁</a></li>
+                        <li id="sList"><a class="menuLink" href="">&nbsp;</a></li>
+                    </ul>
+                </li>
+                <li id="mList" style="right:449px;">메뉴안내
+                    <ul id="sListUl" >
+                        <li id="sList"><a class="menuLink" href="">스시·롤&샐러드바</a></li>
+                        <li id="sList"><a class="menuLink" href="">핫디쉬</a></li>
+                        <li id="sList"><a class="menuLink" href="">즉석코너</a></li>
+                        <li id="sList"><a class="menuLink" href="">디저트</a></li>
+                        <li id="sList"><a class="menuLink" href="">신메뉴 소개</a></li>
+                    </ul>
+                </li>
+                <li id="mList" style="right:298px;">매장찾기
+                    <ul id="sListUl" >
+                        <li id="sList"><a class="menuLink" href="">쿠우쿠우 매장찾기</a></li>
+                        <li id="sList"><a class="menuLink" href="">&nbsp;</a></li>
+                        <li id="sList"><a class="menuLink" href="">&nbsp;</a></li>
+                        <li id="sList"><a class="menuLink" href="">&nbsp;</a></li>
+                        <li id="sList"><a class="menuLink" href="">&nbsp;</a></li>
+                        
+                    </ul>
+                </li>
+                <li id="mList" style="right:147px;">쿠우쿠우창업
+                    <ul id="sListUl" >
+                        <li id="sList"><a class="menuLink" href="">개설절차</a></li>
+                        <li id="sList"><a class="menuLink" href="">가맹상담신청</a></li>
+                        <li id="sList"><a class="menuLink" href="">&nbsp;</a></li>
+                        <li id="sList"><a class="menuLink" href="">&nbsp;</a></li>
+                        <li id="sList"><a class="menuLink" href="">&nbsp;</a></li>
+                    </ul>
+                </li>
+                <li id="mList" style="right:-4px;">고객지원
+                    <ul id="sListUl" style="border-right: 1px solid rgba(196, 194, 194, 0.767);">
+                        <li id="sList"><a class="menuLink" href="">공지사항</a></li>
+                        <li id="sList"><a class="menuLink" href="">이벤트</a></li>
+                        <li id="sList"><a class="menuLink" href="">고객불편사항</a></li>
+                        <li id="sList"><a class="menuLink" href="">&nbsp;</a></li>
+                        <li id="sList"><a class="menuLink" href="">&nbsp;</a></li>
+                    </ul>
+                </li>
+        </ul>
+    </nav>
+   
+    <div  style="position: relative; width: 100%; height: 95px;"> <!-- notice 영역-->
         <div id="logo">
             <img id="logoimg" src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/site_logo.png">
         </div>
-        <nav style=" width: 79%; margin-right: auto; margin-left: auto;"> <!--메뉴 리스트-->
+        <nav id="menuBar" style=" width: 79%; margin-right: auto; margin-left: auto;"> <!--메뉴 리스트-->
             <ul style="margin-left: 5%;">
                 <li id="bigMenu"><a href="../index.html" style=" padding-bottom: 45px;">HOME</a></li>
                 <li id="bigMenu"><a href="../soonhyeon/greeting.html" style=" padding-bottom: 45px;">브랜드이야기</a>
@@ -177,7 +301,8 @@
                       
                     </ul>
                 </li>
-                <li id="bigMenu"><a style="padding-bottom: 45px;"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" style="cursor: pointer;" alt="삼선"></a>
+
+                <li id="bigMenu" class="adidas"><a style="padding-bottom: 45px;"><img src="http://www.qooqoo.co.kr/eyoom/theme/company_e1/image/allmenu.png" style="cursor: pointer;" alt="삼선"></a>
                    
                 </li>
 
@@ -193,7 +318,6 @@
             <!-- </div> -->
         </nav>
     </div>
-    
 
     <ul id="hiddenList" class="example01" style="display: none; list-style:none;  padding-left:0px;">
         <li>
@@ -260,7 +384,7 @@
             </div>
         </li>
     </ul>
-      
+ 
     <header>   <!-- Header 영역 -->
         <div id="menuBigImg">
             <span>

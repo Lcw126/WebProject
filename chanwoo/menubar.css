@@ -11,7 +11,7 @@
     /* #MallMenu {display: inline-block;} */
     
     #logoimg{ width: 100px;} /*맨위 쿠우쿠우 이미지 크기*/
-    #menuBar{  height: 65px;  } /*메뉴바 흰색 높이를 줄이려고 했지만 적용 안됨  ##### */
+    #menuBar{   display: none;   } /*메뉴바 흰색 높이를 줄이려고 했지만 적용 안됨  ##### */
     #menuBigImg{ /**/
         padding: 3em 0em;
         text-align: center;
@@ -28,6 +28,8 @@
     #SecondMenu{display: flex; flex-direction: column;} /*원래 작은 메뉴를 안보이게 적용*/
 
     #HeaderSecondMenuUl{flex-direction: column;margin-left: auto; margin-right: auto; margin-top: -25%;} /*작은 메뉴 수직 배열*/
-
+    
+    #allmenuList{display: none;}
+    #topMenu{display: none;}
    
  }
