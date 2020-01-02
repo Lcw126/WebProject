@@ -1,0 +1,137 @@
+.wrapper {margin:88px 0 0 0;}
+
+.headline-center {text-align:center; position:relative; margin-bottom:20px}
+.headline-center h2 {font-family:'Verdana'; color:#313131; font-weight:bold; font-size:22px; position:relative;}
+
+.header-slider{margin-bottom: 35px; margin: 0 130px;}
+
+.icon-list{width: 85%; margin: 0 auto;}
+.icon-list i {display:inline-block;width:78px;height:78px;line-height:72px;text-align:center;color:#fff;border-radius:50% !important;font-size:20px;background:#aaa;position:relative;left: 105px;vertical-align:middle;}
+
+#more{position: relative; left: 43px;}
+.icon-list div {font-size:17px;color:#000;display:block;margin-left:5px;font-weight:450; word-break: keep-all;position: relative;left: 63px;margin-bottom: 8px;margin-top: 10px;}
+.icon-list div strong {color:#ff8f16; font-weight:500;}
+.icon-list p {text-align:center; line-height:1.7; color:#717171;font-size:12px;padding:5px;}
+
+.carousel-item{position:relative; overflow:hidden; text-align:center; height:807px}
+.carousel-caption h1{font-family:'Verdana'; color:#fff; font-size:47px; font-weight:600; margin:0; line-height:1.1; text-shadow:2px 0 1px rgba(000,000,000,0.4);}
+.carousel-caption h1 span{display:block; font-weight:300;}
+.carousel-caption p{padding-top:10px; color:#fff;font-size:15.5px;font-weight:400;margin:0;text-shadow:1px 0 1px rgba(000,000,000,0.9);}
+
+.container.main-contents {width:100%}
+.basic-body-main.main-contents {padding:0}
+.container.main-section {padding-top:15px;padding-bottom:20px}
+@media (min-width:992px) {
+	.container.main-section {padding-bottom:50px}
+}
+@media (max-width:991px) {
+	.container.main-section {padding-top:30px;padding-bottom:40px}
+}
+@media (max-width: 748px){
+	.container.main-section {padding:25px 25px 17px 25px;}
+}
+
+/* NOTICE */
+.board_background{width:100%;background:#f7f7f7;height: 365px; padding: 35px 36px;}
+.board{height: 300px;}
+.title{font-family:'Verdana'; margin:10px 0 18px; line-height:1; font-weight:bold; font-size:21px; color:#333;}
+.noticeArea{margin: 0;}
+.board .noticeArea div {position:relative;}
+.plus{position: relative; top:0; left: 350px; bottom: 100px; display:block; text-align:center; width:25px; height:25px; line-height:24px; font-size:17px; color:#fe9d35; font-weight:400; border:1px solid #fe9d35;}
+.plus:hover {background:#fe9d35; color:#fff; -webkit-transition:all 0.9s ease; transition:all 0.9s ease;}
+.board ul{margin-bottom:0; padding:0; list-style:none;}
+.board ul li{float:left;}
+.board > ul > li:first-child {width:31%; margin-left:2%; margin-right:4%;}
+.board-list{padding-top:10px; height:220px;display: flex;justify-content: space-between;}
+.list-a p{margin: 0;}
+.list-a a{text-decoration: none; color: black;}
+.list-a a:hover{color:#ff8f16}
+.date p{margin: 0;}
+
+/* MAP */
+.storeLocation{float:left; width:63%; margin-right:0%;}
+.map{float:left; width:61.6%;}
+.map img{width:100%; max-width:493px;height: 214px;max-height: 214px;}
+.mapCon{float:left; width:35.4129%; background:#ffac53; color:#fff; padding:50px 40px; line-height:29px; text-align:center; font-size:14px;height: 214px;}
+.mapCon a{display:block; margin:0 auto; margin-top:16px; text-align:center; width:130px; height:40px; line-height:37px; font-size:13px; color:#fff; font-weight:400; border:2px solid #fff;}
+.mapCon a:hover{background:#fff; color:#ffac53; -webkit-transition:all 0.9s ease; transition:all 0.9s ease; font-weight:500;}
+@media all and (min-width: 992px) and (max-width: 1200px) {
+    .map {overflow:hidden; width:61.6%; height:272px; }
+    .map img {max-width:100%; width:100%; max-height:100%; height:100%;}
+}
+
+
+.main-section{padding-top:15px;padding-bottom:20px;margin-top: 30px; margin-left: 0px; margin-right: 0px;}
+.headline-center{text-align:center; position:relative; margin-bottom:20px}
+.headline-center h2 {font-family:'Verdana'; color:#313131; font-weight:bold; font-size:22px; position:relative;}
+.headline-center p {font-size:13px; color:#676767;}
+
+.thumbnail{margin:0 auto; margin-bottom:0;}
+.thumbnail img{width:100%; max-width:280px;}
+
+.event_bg{background-color: #f7f7f7}
+.event{margin-left: auto; margin-right: auto; margin-top: 50px;}
+.event-list ul{list-style: none;}
+.event-headline h2{font-family:'Verdana'; color:#2f2f2f; font-weight:bold; font-size:40px; position:relative;}
+.event-headline p{font-size:16px; color:#2f2f2f; padding-top:20px;}
+.event-headline a{display:block; width:54px; height:54px;}
+.event-list ul li{float:left; padding-left:2px; padding-right:2px;}
+.eventimg{width:100%; max-width:300px;}
+
+@media (min-width:768px) { 
+	.imgBox {padding-left:1.64%; padding-right:1.64%; margin:0 auto;}
+}
+@media (max-width:768px) {
+	.imgBox .col-sm-3 img {}
+	.imgBox .col-sm-3 {margin-bottom:10px;}
+}
+@media (min-width: 500px) and (max-width: 767px) {
+	.imgBox .col-xs-6 {width:25%;}
+}
+@media (max-width: 430px) {
+	.imgBox .col-sm-3, .imgBox .col-xs-6 {padding:0 5px;}
+}
+
+
+
+@media (max-width: 991px) {
+    .wrapper {margin:54px 0 0 0;}
+    .container .row {margin:0px auto 0;}
+}
+
+@media (max-width: 748px){
+	.icon-list div {font-size:12px; line-height:1.6;}
+	.icon-list p {display:none;}
+}
+
+/* carousel slide visual */
+@media (min-width: 1200px) and (max-width: 1438px) { 
+	.carousel-inner {height:670px;}
+	.carousel-caption{height:670px;}
+}
+@media (min-width: 992px) and (max-width: 1199px) { 
+	.carousel-inner {height:550px;}
+    .carousel-caption{height:550px;}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel-inner {height:380px}
+    .carousel-caption{height:380px;}
+}
+@media (max-width: 767px) {
+    .carousel-inner {height:250px}
+    .carousel-caption{height:380px;}
+	.carousel-caption h1 {font-size:25px;}
+	.carousel-caption p {color:#fff;font-size:11px}
+}
+@media (max-width: 430px) {
+    .carousel-inner {height:210px}
+	.carousel-caption {height:210px}
+	.carousel-caption h1 {font-size:24px;}
+}
+
+
+/* notice */
+/* .body{margin-top: 20px; background-color: blue;} */
+.body h3 {color:#232323; background:url('../imgs/stit_bullet.gif') 2px 10px no-repeat; padding-left:40px; padding-top:11px; padding-bottom:20px;}
+.body h3 span {font-size:13px; color:#565656; padding-left:12px;}
+.board-list{margin-top: 10px; margin-bottom: 20px;}
