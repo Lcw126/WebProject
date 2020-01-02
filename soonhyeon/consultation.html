@@ -53,17 +53,7 @@
             vertical-align: middle;
             text-align: center;
         }
-        #btn{ /* 쿠우쿠우 매장찾기 스타일 */
-            height: 40px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: rgb(238, 119, 0);
-            border: 1px solid white;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 6px; /*세로 가운데 정렬을 위해*/
-        }
+
         #logo{
             position: absolute;
             top: 20px;
@@ -75,9 +65,9 @@
             left: 220px;
             font-size: 16px;
         }
-        nav li{
+        nav #bigMenu{
             display: inline-block;
-            margin-left: 20px;
+            margin-left: 30px;
         }
         nav li a{color: black; font-size:14px; font-weight: 900; }
         nav li a:link{text-decoration: none;}
@@ -86,13 +76,18 @@
            color: rgb(238, 119, 0);
            
         }
-        nav li div:hover{ background-color: rgb(255, 171, 88); color: rgb(255, 255, 255);}
+        nav li #memberintro:hover{ background-color: rgb(238, 119, 0); color: rgb(255, 255, 255); font-weight: 900;}
         .secondMenu{
             
-            background: rgba(255, 255, 255, 0.315);
+            background: rgba(255, 255, 255, 0.692);
+            width: 23%;
+            
             /* display:none;  평상시에는 서브메뉴가 안보이게 하기 */
             padding: 0;
             margin: 0;
+            border-top: 1.5px solid orange;
+            
+            margin-top: 3%;
             text-align: center;
             position: absolute;
             opacity: 0;
@@ -105,7 +100,8 @@
             opacity: 1;
             visibility: visible;
             }
-        nav ul li #allMenu:hover .secondMenu{ opacity: 1; visibility: visible;}
+        nav ul li #allMenu:hover li .secondMenu{ opacity: 1; visibility: visible;}
+
         #HeaderSecondMenu a{
             background-color: null;
             opacity: 1.0; 
@@ -113,6 +109,9 @@
             border: 1px solid white;    
             width: 200px; 
         }
+        section{width: 60%; margin-left: auto; margin-right: auto;}
+        .nomalFont{ font-size: 13px; font-weight: 900;}
+       
         .footer{
             position : relative;
             width: 100%;    
@@ -127,8 +126,6 @@
         }
 
 
-        section{width: 60%; margin-left: auto; margin-right: auto;}
-        .nomalFont{ font-size: 13px; font-weight: 900;}
         #topMenu {   
                 height: 0px; 
                 width: 60%;    
